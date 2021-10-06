@@ -5,20 +5,33 @@
 /* This is my first proper css file */
 
 body{
-    background-color: rgb(233, 233, 233);
+    background-color: pink;
+    max-width: 450px;
+    margin: auto;
 }
 
-h1, h3, p{
-    color:rgb(17, 17, 17);
-    font-family: 'Roboto', sans-serif;
+h1{
+
+    color: black;
+    font-family: 'Poppins', sans-serif ;
+}
+
+h3{
+    color: white;
+    font-family: 'Poppins', sans-serif ;
+}
+
+p{font-family: 'Poppins', sans-serif;
+color: rgba(0, 0, 0, 0.507);
 }
 
 .chart{
-    background-color: pink;
-    width:330px;
-    border-width: 10px;
+    background-color: white;
+    width:auto;
+    border-width: 1px;
     border-style: solid;
     border-radius: 5px;
-    border-color: white;
+    border-color: rgb(253, 5, 5);
+    margin: auto;
 }
 
