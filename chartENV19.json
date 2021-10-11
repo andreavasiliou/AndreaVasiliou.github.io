@@ -25,7 +25,7 @@
     "width": 260,
   
     "mark": {
-      "type": "bar", "width":{"band":0.5},
+      "type": "bar", "width":18,
       "color": "#d086b7"},
       
       
