@@ -1,36 +1,46 @@
-{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "title": {
-      "text": " GDP in million euros in France between 2016-2020 ",
-      "subtitle":"",
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
-      "anchor": "start",
-      "color": "black"},
-  
-  "data":{"url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/Data%20on%20GDP.csv"},
-  
-  "height": 300,
-  "width": 260,
+    "data": {
+       "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/Data%20on%20GDP.csv",
+       "format": {
+           "type":"csv",
+           "property": null}},
 
-  "mark": {
-    "type": "bar",  "width": {"band": 0.7}, "color": "#39c5cf"},
-  
 
-"encoding": {
-     "x": {
-       "field": "TIME",
-       "type": "ordinal",
-       "axis": {
+    "title": {
+        "text": "France GDP",
+        "subtitle": "GDP in million Euros (y)",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+    "width":300,
+    "height":300,
+
+    "mark":{
+        "type": "line",
+        "color":"seagreen",
+        "strokeWidth":2,
+        "opacity":1},
+ 
+
+    "encoding": {
+      "x": {
+          "field": "TIME",
+          "type": "ordinal",
+          "title":null,
+          "axis": {
          "title": null,
-         "grid": false,
+         "grid": true,
          "ticks": false,
-         "labelAngle": 45}},
-
+         "labelAngle": 0}},
       "y": {
-        "field": "GDP in million euro",
-        "type": "quantitative",
-        "title": null,
-        "axis": {"grid": true}}
-}
+          "field": "GDP in million euro",
+          "type": "quantitative",
+          "title":null,
+          "scale": {"domain": [2100000, 2500000]}
+          }
+    }
 }
