@@ -31,6 +31,6 @@
         "field": "GDP in million euro",
         "type": "quantitative",
         "title": "GDP in million",
-        "axis": {"grid": false}}
+        "axis": {"grid": true}}
 }
 }
