@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": " GDP in million euros in France between 2016-2020 ",
+    "subtitle": "",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/Dt.csv"
+  },
+  "height": 300,
+  "width": 260,
+  "mark": {"type": "bar", "width": {"band": 0.7}, "color": "#37c5cf"},
+  "encoding": {
+    "x": {
+      "field": "TIME",
+      "type": "ordinal",
+      "axis": {"title": null, "grid": false, "ticks": false, "labelAngle": 45}
+    },
+    "y": {
+      "field": "GDP in million euro",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}
+    }
+  },
+  "config": {}
+}
