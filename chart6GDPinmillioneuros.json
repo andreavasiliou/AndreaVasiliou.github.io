@@ -1,7 +1,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-      "text": " GDP in million euros in France between 20216-2020 ",
+      "text": " GDP in million euros in France between 2016-2020 ",
       "subtitle":"",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
