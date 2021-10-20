@@ -22,7 +22,7 @@
        "field": "TIME",
        "type": "ordinal",
        "axis": {
-         
+         "title": null,
          "grid": false,
          "ticks": false,
          "labelAngle": 45}},
@@ -30,7 +30,7 @@
       "y": {
         "field": "GDP in million euro",
         "type": "quantitative",
-        "title": ""
-        }
+        "title": null,
+        "axis": {"grid": false}}
 }
 }
