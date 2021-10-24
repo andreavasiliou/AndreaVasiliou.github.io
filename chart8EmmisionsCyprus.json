@@ -4,7 +4,7 @@
   "title": {
     "text": "Emmissions data using satellite imagary",
     "anchor": "start",
-    "subtitle": "Country used is Cyprus between 2010 until 2010-2021"
+    "subtitle": "Country used is Cyprus between 2010 and 2021"
   },
   "data": {
     "url": "https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json?country=cy&begin=2010-02-01&end=2021-07-01"
