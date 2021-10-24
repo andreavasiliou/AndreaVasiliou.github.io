@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Bitcoin exchange rate",
+    "subtitle": "Bitcoin from 2016-2019",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?period_id=2hrs&time_start=2016-01-01T00:00:00&time_end=2019-01-01T00:00:00&apikey=1B2F611E-E5F5-47B5-99A1-4736A541B534"
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {"type": "line", "point": false},
+  "encoding": {
+    "x": {
+      "field": "time_period_start",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 20,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "rate_high",
+      "type": "quantitative",
+      "title": null,
+      "scale": {"domain": [400, 500]},
+      "axis": {"grid": false}
+    },
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "scale": {"scheme": "set1"},
+      "title": null,
+      "legend": {"orient": "top-right"}
+    }
+  },
+  "config": {}
+}
