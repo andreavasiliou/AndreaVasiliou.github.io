@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/data_FRED-GDPC1.json",
+    "format": {"type": "json", "property": "observations"}
+  },
+  "title": {
+    "text": "Real Gross Domestic Product ",
+    "subtitle": "Gross Domestic Product  in the US between 1947 to 2021 ",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "mark": {
+    "type": "line",
+    "color": "blueviolet",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": null, "grid": false},
+    "y": {"field": "value", "type": "quantitative", "title": null}
+  },
+  "config": {}
+}
