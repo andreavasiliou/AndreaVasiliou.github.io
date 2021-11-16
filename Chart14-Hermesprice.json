@@ -1,0 +1,79 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Increase in Hermes Kelly bags since the 1950s",
+  "title": {
+    "text": "Increase in Hermes Kelly bags since the 1950s",
+    "subtitle": "DATA Posted on 09-17-2014",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/hw_csv.csv"
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "",
+    "color": "#d38d25"
+  },
+  "encoding": {"x": {"field": "Year", "type": "temporal", "title": null}},
+  "layer": [
+    {
+      "encoding": {
+        "y": {"field": "Price (USD)", "type": "quantitative", "title": null}
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "line",
+            "align": false,
+            "interpolate": "",
+            "color": "red"
+          }
+        },
+        {
+          "transform": [{"filter": {"selection": "hover"}}],
+          "mark": {"type": "circle", "size": 150, "color": "orange"}
+        }
+      ]
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0, "selection": "hover"},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "temporal",
+            "format": "%b-%Y",
+            "title": "Date"
+          },
+          {
+            "field": "Price (USD)",
+            "type": "quantitative",
+            "format": ",.0f",
+            "title": "Price (USD)"
+          }
+        ]
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Year"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    }
+  ],
+  "config": {}
+}
