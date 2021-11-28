@@ -1,0 +1,40 @@
+{
+  "schema": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/TotalCovidcases-selected%20countries.csv",
+  "title": {
+    "text": "Total Coronavirus cases ",
+    "subtitle": "The data includes: 4 developing countries and 4 developed countries",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+      {"Country": "Argentina", "Value": 5325560},
+      {"Country": "India", "Value": 34571368},
+      {"Country": "Brazil", "Value": 22076863},
+      {"Country": "China", "Value": 98608},
+      {"Country": "Switzerland", "Value": 982290},
+      {"Country": "United Kingdom", "Value": 10110408},
+      {"Country": "Germany", "Value": 5744517},
+      {"Country": "US", "Value": 49077608}
+    ]
+  },
+  "height": 300,
+  "width": 400,
+  "mark": {"type": "bar", "width": 20, "color": "green"},
+  "encoding": {
+    "x": {
+      "field": "Country",
+      "type": "Nominal",
+      "axis": {"title": "Country", "grid": true, "ticks": true, "labelAngle": 0}
+    },
+    "y": {
+      "field": "Value",
+      "type": "nominal",
+      "title": "Total Cases ",
+      "axis": {"grid": false}
+    }
+  },
+  "config": {}
+}
