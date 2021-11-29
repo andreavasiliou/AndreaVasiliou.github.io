@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Population growth for Argentina",
+    "subtitle": "Source: FRED. Years: 2000-2020 ",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "purple"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/Population%20growth-%20Argentina.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {
+    "type": "circle",
+    "color": "#9900ffec",
+    "strokeWidth": 2,
+    "opacity": 1
+  },
+  "transform": [
+    {
+      "calculate": "timeParse(datum.observation_date, '%d/%m/%Y')",
+      "as": "observation_date"
+    },
+    {"calculate": "year(datum.observation_date)", "as": "year"},
+    {"filter": "datum.year>=minYear"},
+    {"filter": "datum.year<=maxYear"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2000,
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 2020,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 2000,
+        "max": 2020,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "encoding": {
+    "x": {"field": "observation_date", "type": "temporal", "title": null},
+    "y": {
+      "field": "Population Growth for Argentina",
+      "type": "quantitative",
+      "title": null,
+      "scale": {
+        "domain": {"data": "myData", "field": "Population Growth for Argentina"}
+      }
+    }
+  },
+  "config": {}
+}
