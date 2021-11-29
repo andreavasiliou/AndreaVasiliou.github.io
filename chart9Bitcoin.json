@@ -37,7 +37,7 @@
       "type": "nominal",
       "scale": {"scheme": "set1"},
       "title": null,
-      "legend": {"orient": "top-right"}
+      "legend": null
     }
   },
   "config": {}
