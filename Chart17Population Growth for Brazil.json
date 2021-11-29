@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/Population%20Growth%20for%20Brazil.csv"
+  },
+  "title": {
+    "text": "Population Growth for Brazil",
+    "subtitle": ["Data 2000-2020. Source: FRED .", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "vconcat": [
+    {
+      "width": 480,
+      "mark": "area",
+      "encoding": {
+        "x": {
+          "field": "observation_date",
+          "type": "temporal",
+          "scale": {"domain": {"param": "brush"}},
+          "axis": {"title": ""}
+        },
+        "y": {"field": "Population Growth for Brazil", "type": "quantitative"}
+      }
+    },
+    {
+      "width": 480,
+      "height": 60,
+      "mark": "area",
+      "transform": [
+        {"calculate": "year(datum.observation_date)", "as": "year"}
+      ],
+      "params": [
+        {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
+      ],
+      "encoding": {
+        "x": {"field": "observation_date", "type": "temporal"},
+        "y": {
+          "field": "Population Growth for Brazil",
+          "type": "quantitative",
+          "axis": {"tickCount": 3, "grid": true}
+        }
+      }
+    }
+  ],
+  "config": {}
+}
