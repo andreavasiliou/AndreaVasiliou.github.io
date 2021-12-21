@@ -1,23 +1,23 @@
-
-
-
-
 /* This is my first proper css file */
 
 body{
-    background-color: blue-violet;
+    background-color: #f4e9f8;
     max-width: 450px;
     margin: auto;
 }
 
 h1{
 
-    color: black;
-    font-family: 'Poppins', sans-serif ;
+    font-family: Inter,sans-serif;
+        font-size: 58px; 
+        font-weight: bold;
+        letter-spacing: -1px; 
+        line-height: 1; 
+        text-align: center;  
 }
 
 h3{
-    color: white;
+    color: #1f1d79;
     font-family: 'Poppins', sans-serif ;
 }
 
@@ -31,16 +31,77 @@ color: rgba(0, 0, 0, 0.507);
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
-    border-color: rgb(253, 5, 5);
+    border-color: rgb(215, 34, 231);
     margin: auto;
 
+}
+
+
+#loader {
+    margin: 150px auto 50px auto;
+    width: 90px;
+    height: 90px;
+    border: 16px solid Gainsboro;
+    border-radius: 50%;
+    border-top: 16px solid rgb(207, 129, 12);
+    border-right: 16px solid green;
+    border-bottom: 16px solid rgb(0, 17, 255);
+    border-left: 16px solid rgb(255, 255, 255);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#loadermessage {
+    position: relative;
+    font-weight: bold;
+    font-family: Inter,sans-serif;
+    color: rgb(207, 129, 12);
+    font-size: 20px; 
+    letter-spacing: 1px; 
+    line-height: 1; 
+    text-align: center;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Animation from https://www.w3schools.com/w3css/w3css_animate.asp */
+.fadeanimation {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+#Div01 {
+    display: none;
+    text-align: center;
 }
 
     /* Button Format */
 .button-56 {
     align-items: center;
     margin: 10px;
-    /*background-color: #f4a270;*/
+    /*background-color: #f4a261;*/
+    background-color: #7464ce;
     border: 2px solid #111;
     border-radius: 8px;
     box-sizing: border-box;
@@ -60,7 +121,6 @@ color: rgba(0, 0, 0, 0.507);
     touch-action: manipulation;
     }
 
- 
 .button-56:after {
     background-color: #111;
     border-radius: 8px;
@@ -88,6 +148,10 @@ color: rgba(0, 0, 0, 0.507);
 .button-56:hover {
     outline: 0;
 }
+
+
+
+
 
 
 
