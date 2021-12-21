@@ -2,7 +2,7 @@
 	
 
 	body{
-	    background-color: rgb(216, 191, 216);
+	    background-color: thistle;
 	    max-width: 450px;
 	    margin: auto;
 	}
@@ -46,7 +46,7 @@
 	.button-56 {
 	    align-items: center;
 	    margin: 10px;
-	    background-color: rgb(147, 112, 219);
+	    background-color: Orchid;
 	    border: 2px solid #111;
 	    border-radius: 8px;
 	    box-sizing: border-box;
