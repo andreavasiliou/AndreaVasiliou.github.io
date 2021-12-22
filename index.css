@@ -33,6 +33,41 @@ color: rgba(0, 0, 0, 0.507);
     margin: auto;
 
 }
+
+#loader {
+    margin: 150px auto 50px auto;
+    width: 90px;
+    height: 90px;
+    border: 16px solid Gainsboro;
+    border-radius: 50%;
+    border-top: 16px solid rgb(235, 167, 229);
+    border-right: 16px solid rgb(0, 0, 0);
+    border-bottom: 16px solid rgb(155, 161, 240);
+    border-left: 16px solid rgb(255, 255, 255);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#loadermessage {
+    position: relative;
+    font-weight: bold;
+    font-family: Inter,sans-serif;
+    color: rgb(207, 129, 12);
+    font-size: 20px; 
+    letter-spacing: 1px; 
+    line-height: 1; 
+    text-align: center;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 	
  /* Button Format */
 .button-56 {
