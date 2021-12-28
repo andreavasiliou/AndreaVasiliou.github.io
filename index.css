@@ -1,90 +1,278 @@
 body{
-    background-color: #f4e9f8;
-    max-width: 450px;
-    margin: auto;
-}
-
-h1{
-
-    font-family: Inter,sans-serif;
-        font-size: 58px; 
-        font-weight: bold;
-        letter-spacing: -1px; 
-        line-height: 1; 
-        text-align: center;  
-}
-
-h3{
-    color: rgb(105, 96, 233);
-    font-family: 'Poppins', sans-serif ;
-}
-
-p{font-family: 'Poppins', sans-serif;
-color: rgba(0, 0, 0, 0.507);
-}
-
-.chart{
-    background-color: white;
-    width:auto;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: rgb(215, 34, 231);
-    margin: auto;
-
-}
-
-
- /* Button Format */
-.button-56 {
-    align-items: center;
-    margin: 10px;
-    /*background-color: #f4a261;*/
-    background-color: #7464ce;
-    border: 2px solid #111;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #111;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    background-color:#f6d6ff  ;
+      
+  }
+  h1{
+      size: initial;
+      font-size: xx-large;
+      color: rgb(141, 42, 255);
+      font-family: 'Anton', sans-serif ;
+  }
+  
+  h3{
+      color: rgb(255, 255, 255);
+      font-family: 'Poppins', sans-serif ;
+  }
+  
+  p{font-family: 'Poppins', sans-serif;
+  color: rgb(141, 42, 255);
+  font-size: 20px; 
+  }
+  
+  header {
+      font-family: 'M PLUS 1 Code', sans-serif;
+      font-size: 100px; 
+      font-weight: bold;
+      letter-spacing: -1px; 
+      line-height: 1; 
+      text-align: center;  
+  }
+  
+  .title {
+      font-family: 'M PLUS 1 Code', sans-serif;
+      color: rgb(141, 42, 255);
+      font-size: 25px; 
+      letter-spacing: 1px; 
+      line-height: 1; 
+      text-align: center;
+  }
+  .title1 {
+      font-family: 'M PLUS 1 Code', sans-serif;
+      color: rgb(141, 42, 255);
+      font-size: 25px; 
+      letter-spacing: 1px; 
+      line-height: 1; 
+      text-align: center;
+  }
+  
+  .bold {
+      font-weight:bold
+  }
+  
+  .orange {
+      color: rgb(141, 42, 255);
+  }
+  
+  .white {
+      color: #f3f0f0;
+  }
+  .topright {
+      position: absolute;
+      top: 8px;
+      right: 16px;
+      font-size: 15px;
+      color: white;
     }
-
-.button-56:after {
-    background-color: #111;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
-}
-
-.button-56:hover:after {
-    transform: translate(0, 0);
-}
-
-.button-56:active {
-    background-color: #274754;
-    outline: 0;
-}
-
-.button-56:hover {
-    outline: 0;
-}
-
+  
+  .chart { 
+      width: 400px;
+      height: 418px;
+      margin: 10px;
+      padding: 5px;
+      background-color: White;
+      border: #222222 solid 5px;
+      border-radius: 10px;
+      font-family: Inter,sans-serif;
+      font-size: 10pxp;
+      transition: border-radius 400ms, flex-grow 1000ms;
+  }
+  .chart2 {
+      width: 400px;
+      height: 380px;
+      margin: 10px;
+      padding: 5px;
+      background-color: White;
+      border: #222222 solid 5px;
+      border-radius: 10px;
+      font-family: Inter,sans-serif;
+      font-size: 10pxp;
+      transition: border-radius 400ms, flex-grow 1000ms;
+  }
+  .chart3 { 
+      width: 409px;
+      height: 418px;
+      margin: 10px;
+      padding: 5px;
+      background-color: White;
+      border: #222222 solid 5px;
+      border-radius: 10px;
+      font-family: Inter,sans-serif;
+      font-size: 10pxp;
+      transition: border-radius 400ms, flex-grow 1000ms;   
+  }
+  .chart:hover {
+      border-color: rgb(141, 42, 255);
+      border-radius: 5px;
+      flex-grow: 0.1;
+    }
+    .chart2:hover {
+      border-color:rgb(141, 42, 255);
+      border-radius: 5px;
+      flex-grow: 0.1;
+    }
+  
+  .container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+  }
+  
+  .container2 {
+      display: flex;
+      justify-content: center;
+  }
+      
+      
+      #container {
+          text-align: center;
+        }    
+  
+    
+  
+      /* Animation from https://www.w3schools.com/w3css/w3css_animate.asp */
+      .fadeanimation {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+      }
+      
+      @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 } 
+          to { bottom:0px; opacity:1 }
+      }
+      
+      @keyframes animatebottom { 
+          from{ bottom:-100px; opacity:0 } 
+          to{ bottom:0; opacity:1 }
+      }
+      
+      #Div01 {
+          display: none;
+          text-align: center;
+      }
+  
+      /* Buttons layout and code from https://getcssscan.com/css-buttons-examples */
+  .button-73 {
+      align-items: center;
+      margin: 10px;
+      appearance: none;
+      background-color: #FFFFFF;
+      border-radius: 40em;
+      border-style: none;
+      box-shadow: #ADCFFF 0 -12px 6px inset;
+      box-sizing: border-box;
+      color: #000000;
+      cursor: pointer;
+      display: inline-block;
+      font-family: -apple-system,sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -.24px;
+      outline: none;
+      padding: 1rem 1.3rem;
+      quotes: auto;
+      text-align: center;
+      text-decoration: none;
+      transition: all .15s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-73:hover {
+      background-color: rgb(141, 42, 255);
+      box-shadow: rgb(141, 42, 255)0 -6px 8px inset;
+      transform: scale(1.125);
+    }
+    
+    .button-73:active {
+      transform: scale(1.025);
+    }
+    
+    @media (min-width: 768px) {
+      .button-73 {
+        font-size: 1.5rem;
+        padding: .75rem 2rem;
+      }
+    } 
+    /* Practice button*/
+    .button-07 {
+      align-items: center;
+      margin: 10px;
+      background-color:rgb(141, 42, 255);
+      border: 2px solid #111;
+      border-radius: 8px;
+      box-sizing: border-box;
+      color: #111;
+      cursor: pointer;
+      display: flex;
+      font-family: Inter,sans-serif;
+      font-size: 16px;
+      height: 48px;
+      justify-content: center;
+      line-height: 24px;
+      max-width: 100%;
+      padding: 0 25px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      }
+      
+      .button-07:after {
+      background-color: #111;
+      border-radius: 8px;
+      content: "";
+      display: block;
+      height: 48px;
+      left: 0;
+      width: 100%;
+      position: absolute;
+      top: -2px;
+      transform: translate(8px, 8px);
+      transition: transform .2s ease-out;
+      z-index: -1;
+  }
+      
+      .button-07:hover:after {
+          transform: translate(0, 0);
+      }
+      
+      .button-07:active {
+          background-color: #274754;
+          outline: 0;
+      }
+      
+          .button-07:hover {
+          outline: 0;
+      }
+      
+      @media (max-width: 480px) {
+          .button-07 {
+              margin: 5px;
+              font-size: 12px;
+          }
+          header {
+              font-size: 65px; 
+          }
+          .chart {
+              width: 380px;
+          }
+          .title1 {
+              font-size: 15px;
+          }
+          #loadermsg {
+              font-size: 15px;
+          }
+          .button-07 {
+              padding: 0 20px;
+          } 
+          .button-07:after {
+              transform: translate(6px, 6px);
+          }
+         
+      }
