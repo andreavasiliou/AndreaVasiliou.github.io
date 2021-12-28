@@ -5,7 +5,7 @@
   },
   "title": {
     "text": "Population Growth for Brazil",
-    "subtitle": ["Data 2000-2020. Source: FRED .", ""],
+    "subtitle": ["Data 2000-2020. Source: FRED with units in % change at annual rate .", ""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
