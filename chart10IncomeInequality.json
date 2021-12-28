@@ -6,7 +6,7 @@
   },
   "title": {
     "text": "Income Inequality in New York County, NY ",
-    "subtitle": "Income Inequality in New York County, between 2010 and 2019",
+    "subtitle": "Gini coefficient in New York County, between 2010 and 2019",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
