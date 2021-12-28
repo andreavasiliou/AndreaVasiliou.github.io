@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Emissions data using satellite imagary",
   "title": {
-    "text": "Emmissions data using satellite imagary",
+    "text": "Average Emmissions data using satellite imagary",
     "anchor": "start",
     "subtitle": "Country used is Cyprus between 2010 and 2021"
   },
