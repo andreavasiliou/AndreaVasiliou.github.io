@@ -5,8 +5,8 @@
     "format": {"type": "json", "property": "observations"}
   },
   "title": {
-    "text": "Real Gross Domestic Product ",
-    "subtitle": "Gross Domestic Product  in the US between 1947 to 2021 ",
+    "text": "Real Gross Domestic Product in the US ",
+    "subtitle": "Units: Billions of Dollars Seasonally Adjusted Annual Rate ",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
