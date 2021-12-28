@@ -65,9 +65,11 @@
     <p class="rubric-launch"> To see my project, click <a class="textLink" href="project"> here</a>.</p> 
     </div>
 
+  
+  //////CHARTS//////
+  <p class=title1><span class="bold">Week 1 - Embedding</span></p>
+<div class="container">
    <!-- chart 1 -->
-<h3>Covid Cases</h3>
-<p>UK regions Covid cases graph : It shows that the cases sharply increase, then fall and in June they increase rapidly. During August and Octomber they are moderately the same. </p>
   <div class="chart" id="chart1">
       <script>
         var myChart1 = "chart1_covidUKRegions.json";
@@ -76,8 +78,6 @@
   </div>
 
 <!--Chart 2 -->
-<h3>Productivity</h3>
-<p>Productivity: As we can see, the UK productivity generally shows an upward trend through out 1971-2021 with some small donwturns throughout the years. </p>
 <div class="chart" id="chart2">
     <script>
       var myChart2 = "chart2_ukProductivity.json";
@@ -86,18 +86,19 @@
 </div>
 
 <!--Chart 3 -->
-<h3>Populations</h3>
-<p>Declining populations: As we can observe, US and Japan face exactly an opposite trend, but Japan and South Korea follow a similar trend. </p>
 <div class="chart" id="chart3">
   <script>
     var myChart3 = "chart3_declinepop.json";
     vegaEmbed('#chart3', myChart3);
   </script>
 </div>
+  
+  <p class=title><span class="bold">Week2- Hosting the data, using API and Raw data</span></p>
+
+<div class="container">
+    
 
 <!--Chart 4 -->
-<h3>Vaccinations</h3>
-<p>Complete Vaccination: Analising, the following graph we see that London's complete vaccination in total is much higher than North east's. </p>
 <div class="chart" id="chart4">
   <script>
     var myChart4 = "Chart4 Complete vaccination.json";
@@ -107,28 +108,26 @@
 
 
 <!--Chart 5 -->
-<h3>Employment by sex and age</h3>
-<p>Employment by sex and age: This is a chart using raw Data by Eurostat . We can see that in 2019, Germany has the heighest employment compared to the other countries with Greece having the lowest one. </p>
 <div class="chart" id="chart5">
   <script>
     var myChart5 = "Chart5Employment by sex and age.json";
     vegaEmbed('#chart5', myChart5);
   </script>
 </div>
-
-<!--Chart 6 -->
-<h3>GDP in million in euros in france </h3>
-<p>GDP in million euros in France between 2016-2020. The 2017-2020 data is from EUROSTAT but I found an extra GDP from another source using raw data. </p>
+  
+  <!--Chart 6 -->
 <div class="chart" id="chart6">
   <script>
     var myChart6 = "chart6GDPinmillioneuros.json";
     vegaEmbed('#chart6', myChart6);
   </script>
 </div>
+  
+  <p class=title1><span class="bold">Week 3 - Editing data, writing JSON manually</span></p>
+
+<div class="container">
 
 <!--Chart 7 -->
-<h3>Green party representation</h3>
-<p>Green part representation, this chart was created by manual coding.  </p>
 <div class="chart" id="chart7">
   <script>
     var myChart7 = "chartENV19.json";
@@ -136,9 +135,8 @@
   </script>
 </div>
 
-<!--Chart 8 -->
-<h3>Emmisions in Cyprus</h3>
-<p>Emmisions in Cyprus, this chart was created by manual coding.  </p>
+  
+  <!--Chart 8 -->
 <div class="chart" id="chart8">
   <script>
     var myChart8 = "chart8EmmisionsCyprus.json";
@@ -146,22 +144,23 @@
   </script>
 </div>
 
-<!--Chart 9 -->
-<h3>Bitcoin exchange rate</h3>
-<p>Bitcoin between 2016-2019, this chart was created using an API coding from coinAPI . 
-  I was granted acces to get my apikey and I combined it with an another api creating a Bitcoin graph to see the change between 3 years.  </p>
+  <p class=title1><span class="bold">Week 4 - Charts created by combining two API's</span></p>
+
+<div class="container">
+
+  <!--Chart 9 -->
 <div class="chart" id="chart9">
   <script>
     var myChart9 = "chart9Bitcoin.json";
     vegaEmbed('#chart9', myChart9);
   </script>
 </div>
+  
+ <p class=title1><span class="bold">Week 5 - Loops and API fetching. Source: FRED</span></p>
+
+<div class="container">
 
 <!--Chart 10 -->
-<h3>Income Inequality in the US</h3>
-<p>Income Inequality in New York County, between 2010 and 2019, This chart was created through a notebook collab that uses a loop
-  for 4 charts . 
-  I was granted acces to get my apikey from FRED   </p>
 <div class="chart" id="chart10">
   <script>
     var myChart10 = "chart10IncomeInequality.json";
@@ -171,23 +170,16 @@
 
 
 <!--Chart 11 -->
-<h3>Real GDP in the US</h3>
-<p>Real Gross Domestic Product in the US, between 1947 to 2021, This chart was created through a notebook collab that uses a loop
-  for 4 charts . 
-  I was granted acces to get my apikey from FRED   </p>
 <div class="chart" id="chart11">
   <script>
     var myChart11 = "chart11REALGDP.json";
     vegaEmbed('#chart11', myChart11);
   </script>
 </div>
+  <div class="container">
 
 
 <!--Chart 12 -->
-<h3>10-Year Breakeven Inflation Rate</h3>
-<p>Inflation rate in the US, this chart was created through a notebook collab that uses a loop
-  for 4 charts . 
-  I was granted acces to get my apikey from FRED   </p>
 <div class="chart" id="chart12">
   <script>
     var myChart12 = "chart12InflationrateUS.json";
@@ -196,50 +188,51 @@
 </div>
 
 <!--Chart 13 -->
-<h3>Unemployment rate in the US</h3>
-<p>Unemployment Rate in the US between 1948-2021, 
-  this chart was created through a notebook collab that uses a loop
-  for 4 charts . 
-  I was granted acces to get my apikey from FRED   </p>
 <div class="chart" id="chart13">
   <script>
     var myChart13 = "chart13Unemployment rate in the US.json";
     vegaEmbed('#chart13', myChart13);
   </script>
 </div>
+</div>
+    
+    <p class=title1><span class="bold">Week 7 - Scrapers</span></p>
+<div class="container">
 
 
 <!--Chart 14 -->
-<h3>Increase in Hermes Kelly bags since the 1950s</h3>
-<p>Increase in Hermes Kelly bags since the 1950s.
-  I scraped the data from Hermes website that had the investment value of the bag.
-</p>
 <div class="chart" id="chart14">
   <script>
     var myChart14 = "Chart14-Hermesprice.json";
     vegaEmbed('#chart14', myChart14);
   </script>
 </div>
+  </div>
+  
+      <p class=title1><span class="bold">Week 8 - Talking Economics</span></p>
+<div class="container">
 
   <!--Chart 15-->
-<h3>Money market interest rates - monthly data</h3>
-<p>The data used is from Eurostat . This chart is made for proving a statement made at the "Talking Economics" conference carried out on November 2021. This is my 15th chart of the money market interest rates - monthly data.
- "The level of interest rates is too low during the pandemic, especially after the first lockdown", this statement was made by Jagjit Chadha and is is indeed true.
- 
-  This can be seen, by the dramatic decrease in the interest rate followed by the first lockdown on March 2020. From March2019 the interest was 0.73, but in March2021 
-  experienced the lowest level at 0.05. The lockdown effect on March 2020, can be seen by the 0.30 drop in the interest rate in 1 year. 
-</p>
-<div class="chart" id="chart15">
+  <div class="chart" id="chart15">
   <script>
     var myChart15 = "Chart15Interestrates-UK.json";
     vegaEmbed('#chart15', myChart15);
   </script>
 </div>
+  </div>
+<div class="container"></div
+     <p>Money market interest rates - monthly data
+The data used is from Eurostat . This chart is made for proving a statement made at the "Talking Economics" conference carried out on November 2021. This is my 15th chart of the money market interest rates - monthly data.
+ "The level of interest rates is too low during the pandemic, especially after the first lockdown", this statement was made by Jagjit Chadha and is is indeed true.
+ This can be seen, by the dramatic decrease in the interest rate followed by the first lockdown on March 2020. From March2019 the interest was 0.73, but in March2021 
+  experienced the lowest level at 0.05. The lockdown effect on March 2020, can be seen by the 0.30 drop in the interest rate in 1 year. 
+</p>
+
+        <p class=title1><span class="bold">Week 9 - Interactive charts</span></p>
+<div class="container">
+  
   
   <!--Chart 16-->
-<h3>Population growth for Argentina</h3>
-<p>The data used is from FRED, and it icnludes the population growth rate from 2000-2020.
-</p>
 <div class="chart" id="chart16">
   <script>
     var myChart16 = "Chart16-Population growth for Argentina.json";
@@ -248,10 +241,6 @@
 </div>
   
   <!--Chart 17-->
-<h3>Population growth for Brazil</h3>
-<p>The data used is from FRED, and it icnludes the population growth rate from 2000-2020.
-  It is an interactive chart with a brush.
-</p>
 <div class="chart" id="chart17">
   <script>
     var myChart17 = "Chart17Population Growth for Brazil.json";
@@ -259,11 +248,12 @@
   </script>
 </div>
     </div>
+  
+    <p class=title1><span class="bold">Week 10 - Advanced analytics-regressions</span></p>
+<div class="container">
+                                     
 
     <!--Chart 18-->
-<h3>Advanced analytics</h3>
-</p>
-
 <p class=title1><span class="bold">Week 9 - Advanced data analysis techniques:Regression.
   The calculated R2=0.01. This means that only 10% of the variation in happiness is explained by population.</span></p>
 
@@ -273,9 +263,14 @@
       <div class="pngchart">
         <img src = "Advanced analytics-regression.png" />
       </div>
+  </div>
 
-    </div>
-
+  <div class="container">
+    <p>The colab notebook is found here <a class="textLink"
+       href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/HomeworkCorrelation_of_happiness_and_population.ipynb"
+       style="color:rgb(245, 164, 43);"> here</a>.
+</p>
+</div>
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
 
