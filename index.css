@@ -34,19 +34,6 @@ color: rgba(0, 0, 0, 0.507);
 
 }
 
-#loader {
-    margin: 150px auto 50px auto;
-    width: 90px;
-    height: 90px;
-    border: 16px solid Gainsboro;
-    border-radius: 50%;
-    border-top: 16px solid rgb(235, 167, 229);
-    border-right: 16px solid rgb(0, 0, 0);
-    border-bottom: 16px solid rgb(155, 161, 240);
-    border-left: 16px solid rgb(255, 255, 255);
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
-}
 
 
  /* Button Format */
