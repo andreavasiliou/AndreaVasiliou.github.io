@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Population growth for Argentina",
-    "subtitle": "Source: FRED. Years: 2000-2020 ",
+    "subtitle": "Source: FRED with units in % change at annual rate ",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
