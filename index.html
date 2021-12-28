@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-<!-- Richard Davies, Data Science 2021 -->
 
 
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
@@ -13,6 +12,8 @@
   <title>Andrea Vasiliou DS Portfolio</title>
 
   <link rel="stylesheet" href="index.css">
+  </style>
+
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
@@ -123,6 +124,8 @@
     vegaEmbed('#chart8', myChart8);
   </script>
 </div>
+<div>
+</div>
 
   <p class=title1><span class="bold">Week 4 - Charts created by combining two API's</span></p>
 
@@ -134,6 +137,7 @@
     var myChart9 = "chart9Bitcoin.json";
     vegaEmbed('#chart9', myChart9);
   </script>
+</div>
 </div>
   
  <p class=title1><span class="bold">Week 5 - Loops and API fetching. Source: FRED</span></p>
@@ -156,7 +160,8 @@
     vegaEmbed('#chart11', myChart11);
   </script>
 </div>
-  <div class="container">
+ 
+<div class="container">
 
 
 <!--Chart 12 -->
@@ -175,8 +180,11 @@
   </script>
 </div>
 </div>
+</div>
+<div>
+
     
-    <p class=title1><span class="bold">Week 7 - Scrapers</span></p>
+   <p class=title1><span class="bold">Week 7 - Scrapers</span></p>
 <div class="container">
 
 
@@ -187,7 +195,7 @@
     vegaEmbed('#chart14', myChart14);
   </script>
 </div>
-  </div>
+</div>
   
       <p class=title1><span class="bold">Week 8 - Talking Economics</span></p>
 <div class="container">
@@ -201,11 +209,10 @@
 </div>
   </div>
 <div class="container"></div
-     <p>Money market interest rates - monthly data from Eurostat . This chart is made for proving a statement made at the "Talking Economics" conference carried out on November 2021. This is my 15th chart of the money market interest rates - monthly data.
+  <p>Money market interest rates - monthly data from Eurostat . This chart is made for proving a statement made at the "Talking Economics" conference carried out on November 2021. This is my 15th chart of the money market interest rates - monthly data.
  "The level of interest rates is too low during the pandemic, especially after the first lockdown", this statement was made by Jagjit Chadha and is is indeed true.
  This can be seen, by the dramatic decrease in the interest rate followed by the first lockdown on March 2020. From March2019 the interest was 0.73, but in March2021 
-  experienced the lowest level at 0.05. The lockdown effect on March 2020, can be seen by the 0.30 drop in the interest rate in 1 year. 
-</p>
+  experienced the lowest level at 0.05. The lockdown effect on March 2020, can be seen by the 0.30 drop in the interest rate in 1 year. </p>
 
         <p class=title1><span class="bold">Week 9 - Interactive charts</span></p>
 <div class="container">
@@ -250,6 +257,22 @@
        style="color:rgb(245, 164, 43);"> here</a>.
 </p>
 </div>
+<script>
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 4000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("loadermessage").style.display = "none";
+    document.getElementById("Div01").style.display = "block";
+  }
+</script>
+
+</div>
+
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
 
