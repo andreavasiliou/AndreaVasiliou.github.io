@@ -13,6 +13,18 @@
   <title>Andrea Vasiliou DS Portfolio</title>
 
   <link rel="stylesheet" href="index.css">
+  
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap');
+</style>
+</style>
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
@@ -26,8 +38,17 @@
 
 
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
-
+<body onload="myFunction()"> 
 <body>
+  //////////LOADER///////////////////////////////////////////////////////-->
+  <div id="loader"></div>
+  
+<div id="loadermessage">Loading data...</div>
+ 
+<div style="display:none;" id="Div01" class="fadeanimation">
+
+<header><span class="orange">Data</span><span class="white">Science</span></header>
+
 
 
   <h1>DATA SCIENCE</h1>
@@ -44,9 +65,7 @@
     <p class="rubric-launch"> To see my project, click <a class="textLink" href="project"> here</a>.</p> 
     </div>
 
-   
-
-<!-- chart 1 -->
+   <!-- chart 1 -->
 <h3>Covid Cases</h3>
 <p>UK regions Covid cases graph : It shows that the cases sharply increase, then fall and in June they increase rapidly. During August and Octomber they are moderately the same. </p>
   <div class="chart" id="chart1">
