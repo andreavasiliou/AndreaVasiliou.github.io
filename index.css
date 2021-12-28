@@ -34,7 +34,21 @@ color: rgba(0, 0, 0, 0.507);
 
 }
 
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+    
+    
+    #container {
+        text-align: center;
+      }    
 
  /* Button Format */
 .button-56 {
