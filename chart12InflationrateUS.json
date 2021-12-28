@@ -5,8 +5,8 @@
     "format": {"type": "json", "property": "observations"}
   },
   "title": {
-    "text": "10-Year Breakeven Inflation Rate",
-    "subtitle": "Inflation rate in the US ",
+    "text": "10-Year Breakeven Inflation Rate in the US",
+    "subtitle": "Units:Percent, Not Seasonally Adjusted ",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
