@@ -21,32 +21,93 @@
 </head>
 
 <body>
-    <h1>Andrea Vasiliou: Data Visualisation Project </h1>
+  
+    <h1> Andrea Vasiliou: Data Science Project
+        Student ID:1937166
+    </h1>
 
-    <h3>Intro</h3>
+    <h3>World wide Inequality and some of its causes</h3></body>
     
-    <p>Project demo page text here.</p>
-  
-</body>
+   <div class="main body">
 
-<!-- Total Coronavirus cases -->
-<div class="chart" id="Chart1">
+    <container class="container">
+    <img src="projectpicture.png" alt="WHERE IS THE HEIGHEST INEQUALITY? WHAR are its causes?" width="900" height="100">
+    </container>
+
+    <container class="container" id="container1">
+
+   <h2> class="bodyText"><span style="color: rgb(141, 42, 255); font-weight: 700;">Where is the heighest inequality and how do we explain it?</span></h2>
+    
+   <p>The aim of this project is to observe how inequality differs in the world. I will be measuring inequality by the Gini coefficient
+      The map was created with by taking data for the Gini coefficient from the World Bank and the cordinates for each country from a 
+       JSON file. I then used colab notebook for matching the countries's names with the coordinates. </p>
+
+       </container>
+
+       <container class="container">
+       </container>
+
+       <container class="bcontainer">
+           <h2 class="bodyText"><span style="color: rgb(141, 42, 255); font-weight: 700;"An introduction: World map of Inequality-Gini coefficient</span></h2>
+       </container>
+
+       <!---For Graphs-->
+       <container class="container">
+
+        <!--INEQUALITY MAP - chart 1-->
+        <h3>World wide inequality</h3>
+        <p></p>
+        <div class="chart1" id="chart1">
+            <script>
+                var myChart1 = "countries1.json";
+                vegaEmbed('#chart1', myChart1);
+            </script>
+        </div>
+    </div>
+
+    <!-- Government expenditure on education-Chart2-->
+    <h3>Government expenditure on education</h3>
+    <p></p>
+    <div class="chart2" id="chart2">
+        <script>
+            var myChart2 ="Government expenditure on education-area.json";
+            vegaEmbed('#chart2',myChart2);
+           </script>
+    </div>
+</div>
+
+<!--% of people attending secondary education-Chart3-->
+<h3>% of people attending secondary education</h3>
+<p></p>
+<div class="chart3" id="chart3">
     <script>
-    var myChart1 = "Chart1TotalCovidcases-project.json";
-    vegaEmbed('#Chart1', myChart1);
-    </script>
+        var myChart3 ="Secondary education attainment.json";
+        vegaEmbed('#chart3, myChart3');
+</script>
+</div>
 </div>
 
- 
+<p class=title1>span class="bold">
+    The calculated R1=0.02. This means that only 2% of the variation in wages is explained by educational attainment.</span></p>
 
+    <div class="container">
 
+    </div>
 
-</div>
-
-</div>
-
-<footer></footer>
+<!--Regression between wages and educational attainment-Chart4-->
+<h3>Regression between wages and educational attainment</h3>
+<p></p>
+<div class="pngchart">
+    <img src="Regression wages and educational attainment.png" />
+    </div>
+    </div>
+    
+</div class="container">
+<p>The colab notebook is found here <a class="textLink"
+    href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Copy_of_Regression_between_wages_and_educational_attainment.ipynb"
+    style="color:rgb(245, 164, 43);"> here</a>.
+</p>
 
 </body>
-  
 </html>
+
