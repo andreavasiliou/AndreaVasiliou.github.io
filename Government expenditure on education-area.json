@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Government expenditure on education, (% of GDP)",
+    "subtitle": "Source: World Bank 2017",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "XYZcolor": "black",
+    "color": "#07f3a4",
+    "subtitleColor": "#cbc7cf"
+  },
+  "XYZconfig": {"background": "white", "view": {"stroke": "transparent"}},
+  "config": {"background": "#041925", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/Data%20on%20government%20expenditure%20on%20education%20in%207%20countries.csv",
+    "format": {"type": "csv"}
+  },
+  "selection": {
+    "Region": {
+      "type": "single",
+      "fields": ["areaName"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Brazil",
+          "India",
+          "USA",
+          "Germany",
+          "China",
+          "Argentina"
+        ],
+        "name": "Pick a country"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "areaName",
+        "oneOf": ["Brazil", "India", "USA", "Germany", "China", "Argentina"]
+      }
+    },
+    {"filter": {"selection": "Region"}}
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": {"type": "area", "width": 12, "point": false},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false, "labelColor": "#dcd9df"}
+    },
+    "y": {
+      "field": "Government expenditure on education(% of GDP)",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false, "labelColor": "#cbc7cf"}
+    },
+    "color": {
+      "field": "areaName",
+      "type": "ordinal",
+      "scale": {"scheme": "yelloworangered"},
+      "title": null,
+      "legend": {
+        "orient": "top-left",
+        "XYZfillColor": "#FcFdFd",
+        "fillColor": "#122b39",
+        "labelColor": "antiquewhite"
+      }
+    },
+    "encoding": {
+      "opacity": {"condition": {"value": 0, "selection": "hover"}, "value": 0},
+      "tooltip": [
+        {
+          "field": "Government expenditure on education(% of GDP)",
+          "type": "quantitative",
+          "format": "%b-%Y",
+          "title": "Government expenditure on education(% of GDP)"
+        },
+        {
+          "field": "Government expenditure on education(% of GDP)",
+          "type": "quantitative",
+          "format": "",
+          "title": "Interest rate"
+        }
+      ]
+    },
+    "tooltip": [
+      {"field": "date", "type": "temporal", "format": "%b-%Y", "title": "Date"},
+      {
+        "field": "Government expenditure on education(% of GDP)",
+        "type": "quantitative",
+        "title": "Government expenditure on education(% of GDP)"
+      }
+    ]
+  }
+}
