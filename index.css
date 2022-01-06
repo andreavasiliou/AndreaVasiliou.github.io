@@ -1,7 +1,12 @@
 body{
     background-color:#f6d6ff  ;
+    max-width: auto;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
       
-  }
+  
   h1{
       size: initial;
       font-size: xx-large;
@@ -126,6 +131,40 @@ body{
       #container {
           text-align: center;
         }    
+
+        .box {
+	
+            box-sizing: border-box;
+            background-color: none;
+            width: auto;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            display: inline-block;
+            margin: 10px;
+            max-width: 500px;
+              
+          }
+
+     .hcontainer {
+    
+        align-content: center;
+        display: flex;
+        justify-content: center;
+        flex-flow: row;
+        position: relative;
+          left: 120px;
+          width: 80%;
+          text-align: center;
+          border: 3px solid rgb(129, 116, 116);
+          border-top: none;
+          border-left: none;
+          border-right: none;
+        padding: 30px;
+        text-align: justify;
+        right: 0px;
+        
+    }
   
     
   
@@ -147,7 +186,21 @@ body{
           from{ bottom:-100px; opacity:0 } 
           to{ bottom:0; opacity:1 }
       }
+      div.a {
+        text-align: center;
+      }
       
+      div.b {
+        text-align: left;
+      }
+      
+      div.c {
+        text-align: right;
+      } 
+      
+      div.d {
+        text-align: justify;
+      }
       #Div01 {
           display: none;
           text-align: center;
