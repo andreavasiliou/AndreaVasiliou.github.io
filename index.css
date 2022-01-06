@@ -146,26 +146,7 @@ body{
               
           }
 
-     .hcontainer {
     
-        align-content: center;
-        display: flex;
-        justify-content: center;
-        flex-flow: row;
-        position: relative;
-          left: 120px;
-          width: 80%;
-          text-align: center;
-          border: 3px solid rgb(129, 116, 116);
-          border-top: none;
-          border-left: none;
-          border-right: none;
-        padding: 30px;
-        text-align: justify;
-        right: 0px;
-        
-    }
-  
 
       div.a {
         text-align: center;
@@ -188,7 +169,7 @@ body{
       }
   
       /* Buttons layout and code from https://getcssscan.com/css-buttons-examples */
-  .button-73 {
+  .button-56 {
       align-items: center;
       margin: 10px;
       appearance: none;
@@ -215,13 +196,13 @@ body{
       touch-action: manipulation;
     }
     
-    .button-73:hover {
+    .button-56:hover {
       background-color: rgb(141, 42, 255);
       box-shadow: rgb(141, 42, 255)0 -6px 8px inset;
       transform: scale(1.125);
     }
     
-    .button-73:active {
+    .button-56:active {
       transform: scale(1.025);
     }
     
@@ -232,7 +213,7 @@ body{
       }
     } 
     /* Practice button*/
-    .button-07 {
+    .button-56{
       align-items: center;
       margin: 10px;
       background-color:rgb(141, 42, 255);
@@ -257,7 +238,7 @@ body{
       touch-action: manipulation;
       }
       
-      .button-07:after {
+      .button-56:after {
       background-color: #111;
       border-radius: 8px;
       content: "";
@@ -272,7 +253,7 @@ body{
       z-index: -1;
   }
       
-      .button-07:hover:after {
+      .button-56:hover:after {
           transform: translate(0, 0);
       }
       
@@ -281,7 +262,7 @@ body{
           outline: 0;
       }
       
-          .button-07:hover {
+          .button-56:hover {
           outline: 0;
       }
       
@@ -292,83 +273,8 @@ body{
       }
 
 
-      /* loader */
-@-webkit-keyframes edit {
-    0% {
-      -webkit-transform: rotate(-12deg);
-      transform: rotate(-12deg);
-    }
-  
-    8% {
-      -webkit-transform: rotate(12deg);
-      transform: rotate(12deg);
-    }
-  
-    10% {
-      -webkit-transform: rotate(24deg);
-      transform: rotate(24deg);
-    }
-  
-    18% {
-      -webkit-transform: rotate(-24deg);
-      transform: rotate(-24deg);
-    }
-  
-    20% {
-      -webkit-transform: rotate(-24deg);
-      transform: rotate(-24deg);
-    }
-  
-    28% {
-      -webkit-transform: rotate(24deg);
-      transform: rotate(24deg);
-    }
-  
-    30% {
-      -webkit-transform: rotate(24deg);
-      transform: rotate(24deg);
-    }
-  
-    38% {
-      -webkit-transform: rotate(-24deg);
-      transform: rotate(-24deg);
-    }
-  
-    40% {
-      -webkit-transform: rotate(-24deg);
-      transform: rotate(-24deg);
-    }
-  
-    48% {
-      -webkit-transform: rotate(24deg);
-      transform: rotate(24deg);
-    }
-  
-    50% {
-      -webkit-transform: rotate(24deg);
-      transform: rotate(24deg);
-    }
-  
-    58% {
-      -webkit-transform: rotate(-24deg);
-      transform: rotate(-24deg);
-    }
-  
-    60% {
-      -webkit-transform: rotate(-24deg);
-      transform: rotate(-24deg);
-    }
-  
-    68% {
-      -webkit-transform: rotate(24deg);
-      transform: rotate(24deg);
-    }
-  
-    75% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-  }
+   
+
   
   @keyframes edit {
     0% {
