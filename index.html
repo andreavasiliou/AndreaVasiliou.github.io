@@ -24,7 +24,50 @@
 
 <!-- ///////////////////  HEAD //////////////////////////////////// -->
 
+</head>
 
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  margin: 0;
+  text-align: center !important;
+}
+
+</style>
+
+<div id="loader">
+  <div id="one"></div>
+  <div id="two"></div>
+</div>
+
+<div id="loadermessage">Loading...</div>
+    
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("loadermessage").style.display = "none";  
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+
+
+
+<body>
 
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
 
