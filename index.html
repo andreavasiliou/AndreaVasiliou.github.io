@@ -1,414 +1,428 @@
 <!DOCTYPE html>
-
-
-
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
-
-<head>
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andrea Vasiliou DS Portfolio</title>
-
-  <link rel="stylesheet" href="index.css">
-  </style>
-
-
-<!--The next three lines allow the Vega embed-->
-<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
-
-</head>
-
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
-
-</head>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-body {
-  margin: 0;
-  text-align: center !important;
-}
-
-</style>
-
-<div id="loader">
-  <div id="one"></div>
-  <div id="two"></div>
-</div>
-
-<div id="loadermessage">Loading...</div>
-    
-</head>
-
-<body onload="myFunction()" style="margin:0;">
-
-<div id="loader"></div>
-
-<div style="display:none;" id="myDiv" class="animate-bottom">
-
-  <script>
-    var myVar;
-    
-    function myFunction() {
-      myVar = setTimeout(showPage, 3000);
-    }
-    
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("loadermessage").style.display = "none";  
-      document.getElementById("myDiv").style.display = "block";
-    }
-    </script>
-
-
-
-<body>
-
-<!-- ///////////////////  START BODY //////////////////////////////////// -->
-
-<body>
-
-
-  <h1>DATA SCIENCE</h1>
-  <P><strong>Andrea Vasiliou. Student ID:1937166</strong></P>
-
-    <div class="container">
-    <button class="button-56" role="button">Home</button>
-    <button class="button-56" onclick="location.href='https://andreavasiliou.github.io/project'">Project</button>
-    <button class="button-56" onclick="location.href='https://github.com/andreavasiliou/AndreaVasiliou.github.io'">Github</button>
-    <button class="button-56" onclick="location.href='https://rapidcharts.io/datascience'">Course Site</button>
-  </div>
-
-  <div class="wrap">
-    <p class="rubric-launch"> To see my project, click <a class="textLink" href="project"> here</a>.</p> 
-    </div>
-  
-
-  
-  PORTFOLIO CHARTS
-
-<!--/////////////////////////////// WEEK 1 ////////////////////////////////////-->
-
-  <p class=title1><span class="bold">Week 1 - Embedding
-    <br>Two charts were given and I embeded them and Chart3 was chosen by me and was found from the website "rapid charts".
-  </span></p>
-   <!-- chart 1 -->
-   <div class="box">
-    <div class="a">
-      <p><strong> UK covid-19 cases</strong></p></div>
-  <div class="chart" id="chart1">
-      <script>
-        var myChart1 = "chart1_covidUKRegions.json";
-        vegaEmbed('#chart1', myChart1);
-      </script>
-  </div>
-   </div>
-
-<!--Chart 2 -->
-<div class="box">
-  <div class="a">
-    <p><strong>UK productivity</strong></p></div>
-<div class="chart" id="chart2">
-    <script>
-      var myChart2 = "chart2_ukProductivity.json";
-      vegaEmbed('#chart2', myChart2);
-    </script>
-</div>
-</div>
-
-<!--Chart 3 -->
-<div class="box">
-  <div class="a">
-    <p><strong>Declining populations in many countries.</strong></p></div>
-<div class="chart" id="chart3">
-  <script>
-    var myChart3 = "chart3_declinepop.json";
-    vegaEmbed('#chart3', myChart3);
-  </script>
-</div>
-</div>
-  
-<!--/////////////////////////////// WEEK 2 ////////////////////////////////////-->
-
-  <p class=title><span class="bold">Week2- Hosting the data, using API and Raw data</span></p>
-    
-
-<!--Chart 4 -->
-<div class="box">
-  <div class="a">
-    <p><strong>Complete Vaccination</strong></p>
-  </div>
-<div class="d">
-  <p>Chart one uses API from the Gov.UK. <br>
-    Analising, the following graph we see that London's complete vaccination in total is much higher than North east's</p></div>
-<div class="chart" id="chart4">
-  <script>  
-   var myChart4 = "Chart4 Complete vaccination.json";
-    vegaEmbed('#chart4', myChart4);
-    </script>
-</div>
-</div>
-
-<!--Chart 5 -->
-<div class="box">
-<div class="a">
-    <p><strong>Employment activity by sex and age</strong></p>
-  </div>
-<div class="d">
-<p>Chart two uses raw data <br>
-I wanted to check how different is the employment in different countries by the sex and age</p></div>
-<div class="chart" id="chart5">
-  <script>
-var myChart5 = "Chart5Employment by sex and age.json";
-  vegaEmbed('#chart5', myChart5);
-  </script>
-  </div>
-  </div>
-  
-<!--/////////////////////////////// WEEK 3 ////////////////////////////////////-->
-<p class=title1><span class="bold">Week 3 - Editing data, writing JSON manually.
-
-  <!--Chart 6 -->
-<div class="box">
-<div class="a">
-    <p><strong>GDP in million in euros in france</strong></p>
-  </div>
-<div class="d">
-<p>Chart 1 uses GDP in million euros in France between 2016-2020.<br>
-  The 2017-2020 data is from EUROSTAT but I found an extra GDP from another source using raw data</p></div>
-  <div class="chart" id="chart6">
-  <script>
-var myChart6 = "chart6GDPinmillioneuros.json";
-    vegaEmbed('#chart6', myChart6);
-</script>
-</div>
-</div>
-  
-
-<!--Chart 7 -->
-<div class="box">
-  <div class="a">
-    <p><strong>Green party representation</strong></p>
-  </div>  
-<div class="d">
-  <p>Chart 2 uses This seventh chart's data is "in-line" JSON, which I have manually written. <br>
-    The data which is a csv file was downloaded from RDeconomist on Github. Then, using Vega-lite online, I recreated the chart.</p></div>
-  <div class="chart" id="chart7">
-  <script>
-    var myChart7 = "chartENV19.json";
-    vegaEmbed('#chart7', myChart7);
-</script>
-</div>
-</div>
-
-<!--/////////////////////////////// WEEK 4 ////////////////////////////////////-->
-<p class=title1><span class="bold">Week 4 - Charts created by combining two API's.</span></p>
-
-  <!--Chart 8 -->
-  <div class="box">
-    <div class="a">
-      <p><strong>Emmisions data using satellite imagary</strong></p>
-    </div>
-<div class="d">
-  <p>Chart 1, shows the emmisions in Cyprus. It is created using an API and I manipulated the country of interest,
-    by choosing Cyprus as an other country.</p></div>
-<div class="chart" id="chart8">
-  <script>
-    var myChart8 = "chart8EmmisionsCyprus.json";
-    vegaEmbed('#chart8', myChart8);
-</script>
-</div>
-</div>
-
-  <!--Chart 9 -->
-  <div class="box">
-    <div class="a">
-      <p><strong>Bitcoin exchange rate</strong></p>
-    </div>
-<div class="d">
-  <p>Chart 2 was created using an API key from CoinApi. I manipulated the API link and changed the time period (2016-2019)<br>
-   I have also chose to show the Exchange Rate of BTC/USD</p></div>
-   <div class="chart" id="chart9">
-  <script>
-    var myChart9 = "chart9Bitcoin.json";
-    vegaEmbed('#chart9', myChart9);
-  </script>
-</div>
-</div>
-  
-<!--/////////////////////////////// WEEK 5 ////////////////////////////////////-->
-
- <p class=title1><span class="bold">Week 5 - Loops and API fetching. Source: FRED</span></p>
-  <div class="container">
-            <p>The colab notebook is found here <a class="textLink"
-               href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Loops_and_API.ipynb"
-               style="color:rgb(245, 164, 43);"> here</a>.
-        </p>
-        </div>
-<!--Chart 10 -->
-<div class="box">
-  <div class="a">
-    <p><strong>Income inequality</strong></p>
-  </div>
-<div class="chart" id="chart10">
-  <script>
-    var myChart10 = "chart10IncomeInequality.json";
-    vegaEmbed('#chart10', myChart10);
-  </script>
-</div>
-</div>
-
-
-<!--Chart 11 -->
-<div class="box">
-  <div class="a">
-    <p><strong>Real Gross Domestic Product</strong></p>
-  </div>
-<div class="chart" id="chart11">
-  <script>
-    var myChart11 = "chart11REALGDP.json";
-    vegaEmbed('#chart11', myChart11);
-  </script>
-</div>
-</div>
-
-<br>
- 
-
-<!--Chart 12 -->
-<div class="box">
-  <div class="a">
-    <p><strong>Breakeven Inflation Rate</strong></p>
-  </div>
-<div class="chart" id="chart12">
-  <script>
-    var myChart12 = "chart12InflationrateUS.json";
-    vegaEmbed('#chart12', myChart12);
-  </script>
-</div>
-</div>
-
-<!--Chart 13 -->
-<div class="box">
-  <div class="a">
-    <p><strong>Unemployment rate</strong></p>
-  </div>
-<div class="chart" id="chart13">
-  <script>
-    var myChart13 = "chart13Unemployment rate in the US.json";
-    vegaEmbed('#chart13', myChart13);
-  </script>
-</div>
-</div>
-
-
-<!--/////////////////////////////// WEEK 7 ////////////////////////////////////-->  
-
-   <p class=title1><span class="bold">Week 7 - Scrapers</span></p>
-
-
-
-<!--Chart 14 -->
-<div class="box">
-  <div class="a">
-    <p><strong>Increase in Hermes prices bags</strong></p>
-  </div>
-<div class="chart" id="chart14">
-  <script>
-    var myChart14 = "Chart14-Hermesprice.json";
-    vegaEmbed('#chart14', myChart14);
-  </script>
-</div>
-</div>
-
-
-  <p>The colab notebook is found here <a class="textLink"
-     href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Scraper_Hermesipynb.ipynb"
-     style="color:rgb(245, 164, 43);"> here</a>.
-</p>
-</div>
-  
-<!--/////////////////////////////// WEEK 8 ////////////////////////////////////-->
-
-      <p class=title1><span class="bold">Week 8 - Talking Economics</span></p>
-
-
-  <!--Chart 15-->
-  <div class="chart" id="chart15">
-  <script>
-    var myChart15 = "Chart15Interestrates-UK.json";
-    vegaEmbed('#chart15', myChart15);
-  </script>
-</div>
-  </div>
-<div class="container"></div>
-  <p>Money market interest rates - monthly data from Eurostat . This chart is made for proving a statement made at the "Talking Economics" conference carried out on November 2021. This is my 15th chart of the money market interest rates - monthly data.
- "The level of interest rates is too low during the pandemic, especially after the first lockdown", this statement was made by Jagjit Chadha and is is indeed true.
- This can be seen, by the dramatic decrease in the interest rate followed by the first lockdown on March 2020. From March2019 the interest was 0.73, but in March2021 
-  experienced the lowest level at 0.05. The lockdown effect on March 2020, can be seen by the 0.30 drop in the interest rate in 1 year. </p>
-
-<!--/////////////////////////////// WEEK 9 ////////////////////////////////////-->
-
-        <p class=title1><span class="bold">Week 9 -  Advanced data analysis techniques:Regression</span></p>
-
-        <p class=title1><span class="bold">
-          The calculated R2=0.01. This means that only 1% of the variation in happiness is explained by population.</span></p>
-        
-              
-            <!-- Chart 16-Happiness and population regression-->
-              <div class="pngchart">
-                <img src = "Advanced analytics-regression.png" />
-              </div>
-        
-        
-          <div class="container">
-            <p>The colab notebook is found here <a class="textLink"
-               href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/HomeworkCorrelation_of_happiness_and_population.ipynb"
-               style="color:rgb(245, 164, 43);"> here</a>.
-        </p>
-        </div>
-        
-  
-<!--/////////////////////////////// WEEK 10 ////////////////////////////////////-->
-
-<p class=title1><span class="bold">Week 10 - Interactive charts.</span></p>
-
- <!--Chart 16-->
-<div class="box">
-<div class="a">
-     <p><strong>Population Growth for Argentina</strong></p></div>
- <div class="a">
- <p>The data is from FRED</p></div>
- <div class="chart" id="chart16">
- <script>
-    var myChart16 = "Chart16-Population growth for Argentina.json";
-    vegaEmbed('#chart16', myChart16);
-  </script>
-  </div>
-  </div>
-  
-  <!--Chart 17-->
-<div clas="box">
-   <div class="a">
-     <p><strong>Population growth for Brazil</strong></p></div>
-    <div class="a">
-    <p>The data is from FRED</p></div>
-  <div class="chart" id="chart17">
-  <script>
-    var myChart17 = "Chart17Population Growth for Brazil.json";
-    vegaEmbed('#chart17', myChart17);
-  </script>
-  </div>
-</div>
-
-
-</body>
-
-<!-- ///////////////////  END BODY //////////////////////////////////// -->
-
-</html>
+	
+
+	
+
+	
+
+	<!-- ///////////////////  HEAD //////////////////////////////////// -->
+	
+
+	<head>
+	
+
+	  <meta charset="UTF-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <title>Andrea Vasiliou DS Portfolio</title>
+	
+
+	  <link rel="stylesheet" href="index.css">
+	  </style>
+	
+
+	
+
+	<!--The next three lines allow the Vega embed-->
+	<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+	
+
+	</head>
+	
+
+	<!-- ///////////////////  HEAD //////////////////////////////////// -->
+	
+
+	
+
+	
+
+	<!-- ///////////////////  START BODY //////////////////////////////////// -->
+	
+
+	<body>
+	
+
+	
+
+	  <h1>DATA SCIENCE</h1>
+	  <P><strong>Andrea Vasiliou. Student ID:1937166</strong></P>
+	
+
+	    <div class="container">
+	    <button class="button-56" role="button">Home</button>
+	    <button class="button-56" onclick="location.href='https://andreavasiliou.github.io/project'">Project</button>
+	    <button class="button-56" onclick="location.href='https://github.com/andreavasiliou/AndreaVasiliou.github.io'">Github</button>
+	    <button class="button-56" onclick="location.href='https://rapidcharts.io/datascience'">Course Site</button>
+	  </div>
+	
+
+	  <div class="wrap">
+	    <p class="rubric-launch"> To see my project, click <a class="textLink" href="project"> here</a>.</p> 
+	    </div>
+	  
+	
+
+	  
+	  PORTFOLIO CHARTS
+	
+
+	<!--/////////////////////////////// WEEK 1 ////////////////////////////////////-->
+	
+
+	  <p class=title1><span class="bold">Week 1 - Embedding
+	    <br>Two charts were given and I embeded them and Chart3 was chosen by me and was found from the website "rapid charts".
+	  </span></p>
+	   <!-- chart 1 -->
+	   <div class="box">
+	    <div class="a">
+	      <p><strong> UK covid-19 cases</strong></p></div>
+	  <div class="chart" id="chart1">
+	      <script>
+	        var myChart1 = "chart1_covidUKRegions.json";
+	        vegaEmbed('#chart1', myChart1);
+	      </script>
+	  </div>
+	   </div>
+	
+
+	<!--Chart 2 -->
+	<div class="box">
+	  <div class="a">
+	    <p><strong>UK productivity</strong></p></div>
+	<div class="chart" id="chart2">
+	    <script>
+	      var myChart2 = "chart2_ukProductivity.json";
+	      vegaEmbed('#chart2', myChart2);
+	    </script>
+	</div>
+	</div>
+	
+
+	<!--Chart 3 -->
+	<div class="box">
+	  <div class="a">
+	    <p><strong>Declining populations in many countries.</strong></p></div>
+	<div class="chart" id="chart3">
+	  <script>
+	    var myChart3 = "chart3_declinepop.json";
+	    vegaEmbed('#chart3', myChart3);
+	  </script>
+	</div>
+	</div>
+	  
+	<!--/////////////////////////////// WEEK 2 ////////////////////////////////////-->
+	
+
+	  <p class=title><span class="bold">Week2- Hosting the data, using API and Raw data</span></p>
+	    
+	
+
+	<!--Chart 4 -->
+	<div class="box">
+	  <div class="a">
+	    <p><strong>Complete Vaccination</strong></p>
+	  </div>
+	<div class="d">
+	  <p>Chart one uses API from the Gov.UK. <br>
+	    Analising, the following graph we see that London's complete vaccination in total is much higher than North east's</p></div>
+	<div class="chart" id="chart4">
+	  <script>  
+	   var myChart4 = "Chart4 Complete vaccination.json";
+	    vegaEmbed('#chart4', myChart4);
+	    </script>
+	</div>
+	</div>
+	
+
+	<!--Chart 5 -->
+	<div class="box">
+	<div class="a">
+	    <p><strong>Employment activity by sex and age</strong></p>
+	  </div>
+	<div class="d">
+	<p>Chart two uses raw data <br>
+	I wanted to check how different is the employment in different countries by the sex and age</p></div>
+	<div class="chart" id="chart5">
+	  <script>
+	var myChart5 = "Chart5Employment by sex and age.json";
+	  vegaEmbed('#chart5', myChart5);
+	  </script>
+	  </div>
+	  </div>
+	  
+	<!--/////////////////////////////// WEEK 3 ////////////////////////////////////-->
+	<p class=title1><span class="bold">Week 3 - Editing data, writing JSON manually.
+	
+
+	  <!--Chart 6 -->
+	<div class="box">
+	<div class="a">
+	    <p><strong>GDP in million in euros in france</strong></p>
+	  </div>
+	<div class="d">
+	<p>Chart 1 uses GDP in million euros in France between 2016-2020.<br>
+	  The 2017-2020 data is from EUROSTAT but I found an extra GDP from another source using raw data</p></div>
+	  <div class="chart" id="chart6">
+	  <script>
+	var myChart6 = "chart6GDPinmillioneuros.json";
+	    vegaEmbed('#chart6', myChart6);
+	</script>
+	</div>
+	</div>
+	  
+	
+
+	<!--Chart 7 -->
+	<div class="box">
+	  <div class="a">
+	    <p><strong>Green party representation</strong></p>
+	  </div>  
+	<div class="d">
+	  <p>Chart 2 uses This seventh chart's data is "in-line" JSON, which I have manually written. <br>
+	    The data which is a csv file was downloaded from RDeconomist on Github. Then, using Vega-lite online, I recreated the chart.</p></div>
+	  <div class="chart" id="chart7">
+	  <script>
+	    var myChart7 = "chartENV19.json";
+	    vegaEmbed('#chart7', myChart7);
+	</script>
+	</div>
+	</div>
+	
+
+	<!--/////////////////////////////// WEEK 4 ////////////////////////////////////-->
+	<p class=title1><span class="bold">Week 4 - Charts created by combining two API's.</span></p>
+	
+
+	  <!--Chart 8 -->
+	  <div class="box">
+	    <div class="a">
+	      <p><strong>Emmisions data using satellite imagary</strong></p>
+	    </div>
+	<div class="d">
+	  <p>Chart 1, shows the emmisions in Cyprus. It is created using an API and I manipulated the country of interest,
+	    by choosing Cyprus as an other country.</p></div>
+	<div class="chart" id="chart8">
+	  <script>
+	    var myChart8 = "chart8EmmisionsCyprus.json";
+	    vegaEmbed('#chart8', myChart8);
+	</script>
+	</div>
+	</div>
+	
+
+	  <!--Chart 9 -->
+	  <div class="box">
+	    <div class="a">
+	      <p><strong>Bitcoin exchange rate</strong></p>
+	    </div>
+	<div class="d">
+	  <p>Chart 2 was created using an API key from CoinApi. I manipulated the API link and changed the time period (2016-2019)<br>
+	   I have also chose to show the Exchange Rate of BTC/USD</p></div>
+	   <div class="chart" id="chart9">
+	  <script>
+	    var myChart9 = "chart9Bitcoin.json";
+	    vegaEmbed('#chart9', myChart9);
+	  </script>
+	</div>
+	</div>
+	  
+	<!--/////////////////////////////// WEEK 5 ////////////////////////////////////-->
+	
+
+	 <p class=title1><span class="bold">Week 5 - Loops and API fetching. Source: FRED</span></p>
+	  <div class="container">
+	            <p>The colab notebook is found here <a class="textLink"
+	               href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Loops_and_API.ipynb"
+	               style="color:rgb(245, 164, 43);"> here</a>.
+	        </p>
+	        </div>
+	<!--Chart 10 -->
+	<div class="box">
+	  <div class="a">
+	    <p><strong>Income inequality</strong></p>
+	  </div>
+	<div class="chart" id="chart10">
+	  <script>
+	    var myChart10 = "chart10IncomeInequality.json";
+	    vegaEmbed('#chart10', myChart10);
+	  </script>
+	</div>
+	</div>
+	
+
+	
+
+	<!--Chart 11 -->
+	<div class="box">
+	  <div class="a">
+	    <p><strong>Real Gross Domestic Product</strong></p>
+	  </div>
+	<div class="chart" id="chart11">
+	  <script>
+	    var myChart11 = "chart11REALGDP.json";
+	    vegaEmbed('#chart11', myChart11);
+	  </script>
+	</div>
+	</div>
+	
+
+	<br>
+	 
+	
+
+	<!--Chart 12 -->
+	<div class="box">
+	  <div class="a">
+	    <p><strong>Breakeven Inflation Rate</strong></p>
+	  </div>
+	<div class="chart" id="chart12">
+	  <script>
+	    var myChart12 = "chart12InflationrateUS.json";
+	    vegaEmbed('#chart12', myChart12);
+	  </script>
+	</div>
+	</div>
+	
+
+	<!--Chart 13 -->
+	<div class="box">
+	  <div class="a">
+	    <p><strong>Unemployment rate</strong></p>
+	  </div>
+	<div class="chart" id="chart13">
+	  <script>
+	    var myChart13 = "chart13Unemployment rate in the US.json";
+	    vegaEmbed('#chart13', myChart13);
+	  </script>
+	</div>
+	</div>
+	
+
+	
+
+	<!--/////////////////////////////// WEEK 7 ////////////////////////////////////-->  
+	
+
+	   <p class=title1><span class="bold">Week 7 - Scrapers</span></p>
+	
+
+	
+
+	
+
+	<!--Chart 14 -->
+	<div class="box">
+	  <div class="a">
+	    <p><strong>Increase in Hermes prices bags</strong></p>
+	  </div>
+	<div class="chart" id="chart14">
+	  <script>
+	    var myChart14 = "Chart14-Hermesprice.json";
+	    vegaEmbed('#chart14', myChart14);
+	  </script>
+	</div>
+	</div>
+	
+
+	
+
+	  <p>The colab notebook is found here <a class="textLink"
+	     href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Scraper_Hermesipynb.ipynb"
+	     style="color:rgb(245, 164, 43);"> here</a>.
+	</p>
+	</div>
+	  
+	<!--/////////////////////////////// WEEK 8 ////////////////////////////////////-->
+	
+
+	      <p class=title1><span class="bold">Week 8 - Talking Economics</span></p>
+	
+
+	
+
+	  <!--Chart 15-->
+	  <div class="chart" id="chart15">
+	  <script>
+	    var myChart15 = "Chart15Interestrates-UK.json";
+	    vegaEmbed('#chart15', myChart15);
+	  </script>
+	</div>
+	  </div>
+	<div class="container"></div>
+	  <p>Money market interest rates - monthly data from Eurostat . This chart is made for proving a statement made at the "Talking Economics" conference carried out on November 2021. This is my 15th chart of the money market interest rates - monthly data.
+	 "The level of interest rates is too low during the pandemic, especially after the first lockdown", this statement was made by Jagjit Chadha and is is indeed true.
+	 This can be seen, by the dramatic decrease in the interest rate followed by the first lockdown on March 2020. From March2019 the interest was 0.73, but in March2021 
+	  experienced the lowest level at 0.05. The lockdown effect on March 2020, can be seen by the 0.30 drop in the interest rate in 1 year. </p>
+	
+
+	<!--/////////////////////////////// WEEK 9 ////////////////////////////////////-->
+	
+
+	        <p class=title1><span class="bold">Week 9 -  Advanced data analysis techniques:Regression</span></p>
+	
+
+	        <p class=title1><span class="bold">
+	          The calculated R2=0.01. This means that only 1% of the variation in happiness is explained by population.</span></p>
+	        
+	              
+	            <!-- Chart 16-Happiness and population regression-->
+	              <div class="pngchart">
+	                <img src = "Advanced analytics-regression.png" />
+	              </div>
+	        
+	        
+	          <div class="container">
+	            <p>The colab notebook is found here <a class="textLink"
+	               href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/HomeworkCorrelation_of_happiness_and_population.ipynb"
+	               style="color:rgb(245, 164, 43);"> here</a>.
+	        </p>
+	        </div>
+	        
+	  
+	<!--/////////////////////////////// WEEK 10 ////////////////////////////////////-->
+	
+
+	<p class=title1><span class="bold">Week 10 - Interactive charts.</span></p>
+	
+
+	 <!--Chart 16-->
+	<div class="box">
+	<div class="a">
+	     <p><strong>Population Growth for Argentina</strong></p></div>
+	 <div class="a">
+	 <p>The data is from FRED</p></div>
+	 <div class="chart" id="chart16">
+	 <script>
+	    var myChart16 = "Chart16-Population growth for Argentina.json";
+	    vegaEmbed('#chart16', myChart16);
+	  </script>
+	  </div>
+	  </div>
+	  
+	  <!--Chart 17-->
+	<div clas="box">
+	   <div class="a">
+	     <p><strong>Population growth for Brazil</strong></p></div>
+	    <div class="a">
+	    <p>The data is from FRED</p></div>
+	  <div class="chart" id="chart17">
+	  <script>
+	    var myChart17 = "Chart17Population Growth for Brazil.json";
+	    vegaEmbed('#chart17', myChart17);
+	  </script>
+	  </div>
+	</div>
+	
+
+	
+
+	</body>
+	
+
+	<!-- ///////////////////  END BODY //////////////////////////////////// -->
+	
+
+	</html>
