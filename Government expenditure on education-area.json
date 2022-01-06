@@ -89,13 +89,14 @@
         }
       ]
     },
-    "tooltip": [
+     "tooltip": [
       {"field": "date", "type": "temporal", "format": "%b-%Y", "title": "Date"},
       {
         "field": "Government expenditure on education(% of GDP)",
         "type": "quantitative",
         "title": "Government expenditure on education(% of GDP)"
-      }
+      },
+      {"field":"areaName","type":"nominal"}
     ]
   }
 }
