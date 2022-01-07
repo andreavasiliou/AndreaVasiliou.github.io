@@ -1,0 +1,472 @@
+body{
+  background-color:#f6d6ff ;
+  max-width: auto;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+    
+
+h1{
+    size: initial;
+    font-size: xx-large;
+    color: rgb(141, 42, 255);
+    font-family: 'Anton', sans-serif ;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif ;
+}
+
+p{font-family: 'Poppins', sans-serif;
+color: rgb(141, 42, 255);
+font-size: 20px; 
+}
+
+
+.title {
+    font-family: 'M PLUS 1 Code', sans-serif;
+    color: rgb(141, 42, 255);
+    font-size: 25px; 
+    letter-spacing: 1px; 
+    line-height: 1; 
+    text-align: center;
+}
+.title1 {
+    font-family: 'M PLUS 1 Code', sans-serif;
+    color: rgb(141, 42, 255);
+    font-size: 25px; 
+    letter-spacing: 1px; 
+    line-height: 1; 
+    text-align: center;
+}
+
+.bold {
+    font-weight:bold
+}
+
+.white {
+    color: #6b6ad1;
+}
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 15px;
+    color: white;
+  }
+
+.chart { 
+    width: 400px;
+    height: 418px;
+    margin: 10px;
+    padding: 5px;
+    background-color: White;
+    border: #222222 solid 5px;
+    border-radius: 10px;
+    font-family: Inter,sans-serif;
+    font-size: 10pxp;
+    transition: border-radius 400ms, flex-grow 1000ms;
+}
+.chart:hover {
+    border-color: rgb(141, 42, 255);
+    border-radius: 5px;
+    flex-grow: 0.1;
+  }
+
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+    
+    
+    #container {
+        text-align: center;
+      }    
+
+
+      .box {
+
+          box-sizing: border-box;
+          background-color: none;
+          width: auto;
+          border-radius: 10px;
+          padding: 10px;
+          text-align: center;
+          display: inline-block;
+          margin: 10px;
+          max-width: 500px;
+            
+        }
+
+
+  
+
+
+    div.a {
+      text-align: center;
+    }
+    
+    div.b {
+      text-align: left;
+    }
+    
+    div.c {
+      text-align: right;
+    } 
+    
+    div.d {
+      text-align: justify;
+    }
+    #Div01 {
+        display: none;
+        text-align: center;
+    }
+
+    /* Buttons layout */
+/* Button Format */
+.button-56 {
+align-items: center;
+margin: 10px;
+background-color: rgb(141, 42, 255);
+border: 2px solid #111;
+border-radius: 8px;
+box-sizing: border-box;
+color: #111;
+font-family: system-ui;
+font-size: 16px;
+height: 48px;
+justify-content: center;
+line-height: 24px;
+max-width: 100%;
+padding: 0 25px;
+position: relative;
+text-align: center;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+
+.button-56:after {
+background-color: #111;
+border-radius: 8px;
+content: "";
+display: block;
+height: 48px;
+left: 0;
+width: 100%;
+position: absolute;
+top: -2px;
+transform: translate(8px, 8px);
+transition: transform .2s ease-out;
+z-index: -1;
+}
+
+
+.button-56:hover:after {
+transform: translate(0, 0);
+}
+
+
+.button-56:active {
+background-color: rgb(141, 42, 255);
+outline: 0;
+}
+
+
+.button-56:hover {
+outline: 0;
+}
+  
+@media (min-width: 768px) {
+  .button-56 {
+  padding: 0 40px;
+}
+}
+
+
+.chart:hover {
+  transform: scale(1.04, 1.04);
+  transition: 0.6s;
+  
+}
+
+/* loader */
+@-webkit-keyframes edit {
+  0% {
+    -webkit-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+
+  8% {
+    -webkit-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  28% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  38% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  48% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  58% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  60% {
+    -webkit-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes edit {
+  0% {
+    -webkit-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+  }
+
+  8% {
+    -webkit-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    transform: rotate(12deg);
+  }
+
+  10% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  20% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  28% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  30% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  38% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  48% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  58% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  60% {
+    -webkit-transform: rotate(-24deg);
+    -ms-transform: rotate(-24deg);
+    transform: rotate(-24deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotate(24deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.faa-edit.animated,
+.faa-edit.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-edit {
+  -webkit-animation: edit 5s ease infinite;
+  animation: edit 5s ease infinite;
+}
+
+.faa-github.animated,
+.faa-github.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-github {
+  -webkit-animation: edit 5s ease infinite;
+  animation: edit 5s ease infinite;
+}
+
+.faa-book.animated,
+.faa-book.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-book {
+  -webkit-animation: edit 5s ease infinite;
+  animation: edit 5s ease infinite;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+}
+
+#one {
+  position: absolute;
+  border-radius: 50%;
+  background: #f0a7a7;
+  opacity: .0;
+  animation: loading 1.4s .65s infinite;
+  height: 20px;
+  width: 20px;
+}
+
+#two {
+  position: absolute;
+  border-radius: 50%;
+  background: pink;
+  opacity: .0;
+  animation: loading 1.4s infinite;
+  height: 20px;
+  width: 20px;
+}
+
+
+@keyframes loading {
+  0% {
+    opacity: .0;
+    transform: scale(.15);
+    box-shadow: 0 0 2px rgba(black, .1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(2);
+    box-shadow: 0 0 10px rgba(black, .1);
+  }
+  100% {
+    opacity: .0;
+    transform: scale(.15);
+    box-shadow: 0 0 2px rgba(black, .1);
+  }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+#loadermessage {
+  position: absolute;
+  text-align: center !important;
+  top: 60% !important;
+  left: 46%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(3, 2, 0);
+  font-size: 20px; 
+  letter-spacing: 1px; 
+  line-height: 1; 
+}
+
+@media only screen and (max-width: 800px) {
+.chart {
+width: 400px;
+overflow:scroll;
+}
+#loadermessage {
+  left:40% !important;
+}
+}
