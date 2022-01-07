@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Secondary education enrollement",
+  "description": "Employment by sex and age",
   "title": {
     "text": "Employment by sex and age",
     "subtitle": "Year:2019",
