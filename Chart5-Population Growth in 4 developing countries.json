@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Population Growth in 4 Developing countries",
+    "subtitle": ["Source: FRED, Units: % change at annual rate.", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/Population%20growth-%20Developing%20countries.csv"
+  },
+  "layer": [
+    {
+      "mark": {"type": "line", "color": "green", "strokeWidth": 3},
+      "encoding": {
+        "x": {
+          "field": "observation_date",
+          "type": "temporal",
+          "title": null,
+          "axis": {"grid": false}
+        },
+        "y": {
+          "field": "Population Growth for Argentina",
+          "type": "quantitative",
+          "title": null
+        },
+        "color": {
+          "datum": "Argentina",
+          "scale": {"range": ["green", "red", "orange", "blue"]},
+          "legend": {"orient": "bottom"}
+        }
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "red", "strokeWidth": 3},
+      "encoding": {
+        "x": {
+          "field": "observation_date",
+          "type": "ordinal",
+          "title": null,
+          "axis": {"grid": false}
+        },
+        "y": {
+          "field": "Population Growth for India",
+          "type": "quantitative",
+          "title": null
+        },
+        "color": {
+          "datum": "India",
+          "scale": {"range": ["blue", "red", "orange"]},
+          "legend": {"orient": "bottom"}
+        }
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "mediumpurple", "strokeWidth": 3},
+      "encoding": {
+        "x": {
+          "field": "observation_date",
+          "type": "ordinal",
+          "title": null,
+          "axis": {"grid": false}
+        },
+        "y": {
+          "field": "Population Growth for Brazil",
+          "type": "quantitative",
+          "title": null
+        },
+        "color": {
+          "datum": "Brazil",
+          "scale": {"range": ["red", "blue", "blue", "purple"]},
+          "legend": {"orient": "bottom"}
+        }
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "green", "strokeWidth": 3},
+      "encoding": {
+        "x": {
+          "field": "observation_date",
+          "type": "ordinal",
+          "title": null,
+          "axis": {"grid": false}
+        },
+        "y": {"field": "", "type": "quantitative", "title": null},
+        "color": {
+          "datum": "China",
+          "scale": {"range": ["blue", "green", "red", "purple"]},
+          "legend": {"orient": "bottom"}
+        }
+      }
+    }
+  ],
+  "height": 300,
+  "width": 300,
+  "config": {}
+}
