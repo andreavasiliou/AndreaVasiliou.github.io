@@ -86,6 +86,12 @@ it represents complete inequality.</p>
     In the Colab notebook, I matched the countries’ names with the countries’ names <br>
     in the JSON file and matched their corresponding coordinates.</p>
 
+</div class="container">
+<p>The colab notebook is found here <a class="textLink"
+    href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/World_map_inequality.ipynb"
+    style="color:rgb(245, 164, 43);"> here</a>.
+</p>
+
 
        </container>
 
@@ -101,7 +107,7 @@ it represents complete inequality.</p>
     <!--INEQUALITY MAP - chart 1-->
         <h3></h3>
         <p></p>
-        <div class="chart1" id="chart1">
+        <div class="chart" id="chart1">
             <iframe src="kepler.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
         </div>
     </div>
@@ -112,20 +118,13 @@ it represents complete inequality.</p>
     Therefore, from the countries of interest, the greatest inequality is in Brazil (53.3) and USA with (41.5). 
         </p>
         <div>
-            <br>
         </div>
 
-</div class="container">
-<p>The colab notebook is found here <a class="textLink"
-    href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/World_map_inequality.ipynb"
-    style="color:rgb(245, 164, 43);"> here</a>.
-</p>
-
-    <!-- Government expenditure on education-Chart2-->
+<!-- Government expenditure on education-Chart2-->
     <h3><span style="color: rgb(20, 7, 36); font-weight: 1000;">Government expenditure on education</span></h3>
     <p>Consequently, in the project I am suggesting that the key factors that affect inequality, are government expenditure on education (as part of the GDP),<br>
          % of people attending the secondary education and population growth. </p>
-    <div class="chart2" id="chart2">
+    <div class="chart" id="chart2">
         <script>
             var myChart2 ="Government expenditure on education-area.json";
             vegaEmbed('#chart2',myChart2);
@@ -142,9 +141,9 @@ it represents complete inequality.</p>
      <h3><span style="color: rgb(9, 2, 17); font-weight: 1000;">% of people attending secondary education</span></h3>
      <p>Graph3, is the % of the population that attend secondary education.<br>
          This is another factor that affect inequality, because when people attend secondary education, <br>
-         it is reasonable to believe that they are going to receive higher wages than the rest of the people who don’t 
+         it is reasonable to believe that they are going to receive higher wages than the rest of the people who do not 
          <br> attend secondary education, resulting in higher inequality.</p>
-<div class="chart3" id="chart3">
+<div class="chart" id="chart3">
     <script>
         var myChart3 ="% of secondary education attainment.json";
         vegaEmbed('#chart3, myChart3');
@@ -186,7 +185,7 @@ it represents complete inequality.</p>
     <br>I chose each data separately by requesting an API, then a I made a loop in python collab to put it in 1 csv. <br>
     Then I adapted layering technique in Vega lite to put all the data in 1 graph.
     </p>
-<div class="chart5" id="chart5">
+<div class="chart" id="chart5">
     <script>
         var myChart5 ="Chart5-Population Growth in 4 developing countries.json";
         vegaEmbed('#chart5',myChart5);
