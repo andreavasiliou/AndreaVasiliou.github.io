@@ -14,11 +14,15 @@
    </style> 
 
         <!--The next three lines allow the Vega embed-->
-<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.2.0"></script>    
 
 </head>
+
 
 <body>
   
@@ -26,7 +30,7 @@
         Student ID:1937166
     </h1>
 
-    <h3> <span style="color": rgb(141, 42, 255); font-weight: 200;">World wide Inequality and some of its causes</span></h3></body>
+    <h3>World wide Inequality and some of its causes</h3></body>
     
    <div class="main body">
 
@@ -36,11 +40,11 @@
 
     <container class="container" id="container1">
 
-   <h2> <span style="color: rgb(141, 42, 255); font-weight: 700;">Where is the highest inequality and how do we explain it?</span></h2>
+   <h2> <span style="color: rgb(141, 42, 255); font-weight: 700;">Where is the heighest inequality and how do we explain it?</span></h2>
     
    <p>The aim of this project is to observe how inequality differs in the world. I will be measuring inequality by the Gini coefficient
       The map was created with by taking data for the Gini coefficient from the World Bank and the cordinates for each country from a 
-       JSON file. I then used colab notebook for matching the countries's names with the coordinates in order to create the map. </p>
+       JSON file. I then used colab notebook for matching the countries's names with the coordinates in order to create a <map name=""></map>. </p>
 
        </container>
 
@@ -55,7 +59,7 @@
        <container class="container">
 
     <!--INEQUALITY MAP - chart 1-->
-        <h3>World wide inequality</h3>
+        <h3> <span style="color: rgb(141, 42, 255); font-weight: 200;">World wide inequality</span></h3>
         <p></p>
         <div class="chart1" id="chart1">
             <iframe src="kepler.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
@@ -69,7 +73,7 @@
 </p>
 
     <!-- Government expenditure on education-Chart2-->
-    <h3>Government expenditure on education</h3>
+    <h3><span style="color: rgb(141, 42, 255); font-weight: 200;">Government expenditure on education</span></h3>
     <p></p>
     <div class="chart2" id="chart2">
         <script>
@@ -78,23 +82,23 @@
            </script>
     </div>
 </div>
-        
-        <!--% of people attending secondary education-Chart3-->
-        <h3>% of people attending secondary education</h3>
-        <div class="chart3" id="chart3">
-        <script>
-        var myChart3="% of secondary education attainment.json";
-        vegaEmbed('#chart3, myChart3);
-        </script>
-        </div>
-        </div>
 
+     <!--% of people attending secondary education-Chart3-->
+     <h3><span style="color: rgb(141, 42, 255); font-weight: 200;">% of people attending secondary education</span></h3>
+     <p></p>
+<div class="chart3" id="chart3">
+    <script>
+        var myChart3 ="Secondary education attainment.json";
+        vegaEmbed('#chart3, myChart3');
+</script>
+</div>
+</div>
 
-<p class=title1> The calculated R1=0.02. This means that only 2% of the variation in wages is explained by educational attainment.</span></p>
+<p class=title1> The calculated R1=0.02. <br>
+    This means that only 2% of the variation in wages is explained by educational attainment.</span></p>
 
     <div class="container">
-
-    </div>
+</div>
 
 <!--Regression between wages and educational attainment-Chart4-->
 <h3>Regression between wages and educational attainment</h3>
@@ -102,13 +106,37 @@
 <div class="pngchart">
     <img src="Regression wages and educational attainment.png" />
     </div>
-    </div>
+
     
-</div class="container">
+<div class="container">
 <p>The colab notebook is found here <a class="textLink"
     href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Copy_of_Regression_between_wages_and_educational_attainment.ipynb"
     style="color:rgb(245, 164, 43);"> here</a>.
 </p>
+</div>
+
+<!-- Population growth in 4 developing countries-Chart5-->
+<h3><span style="color: rgb(141, 42, 255); font-weight: 200;">Population growth in 4 developing countries</span></h3>
+<p></p>
+<div class="chart5" id="chart5">
+    <script>
+        var myChart5 ="Chart5-Population Growth in 4 developing countries.json";
+        vegaEmbed('#chart5',myChart5);
+       </script>
+</div>
+</div>
+
+</div class="container">
+<p>The colab notebook is found here <a class="textLink"
+    href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Loops_and_API.ipynb"
+    style="color:rgb(245, 164, 43);"> here</a>.
+</p>
+
+
+
+
+
+
 
 </body>
 </html>
