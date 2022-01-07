@@ -9,6 +9,7 @@
 
   "title": {
     "text": "Covid cases: UK regions",
+    "subtitle":"NewCases By Publish Date",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
