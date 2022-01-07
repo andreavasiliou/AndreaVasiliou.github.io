@@ -1,28 +1,35 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {
-    "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/Chart5.annual%20data.csv",
-    "format": {"type": "csv"}
-  },
+  "description": "Secondary education enrollement",
   "title": {
-    "text": "Employment and activity by sex and age)",
+    "text": "Employment by sex and age",
     "subtitle": "Year:2019",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
   },
-  "width": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/Chart5-Employment%20by%20sex%20and%20age.csv"
+  },
+  "mark": {"type": "bar", "color": "lightcoral", "strokeWidth": 2, "opacity": 1},
   "height": 300,
-  "mark": {"type": "line", "color": "seagreen", "strokeWidth": 2, "opacity": 1},
+  "width": 300,
   "encoding": {
-    "x": {"field": "Countries", "type": "ordinal", "title": null},
-    "y": {
-      "field": "Employment and activity by sex and age",
-      "type": "quantitative",
-      "scale": {"domain": [0, 90]},
+    "y": {"field": "Employment by sex and age", "type": "quantitative", "sort": "-x", "title": null},
+    "x": {
+      "field": "Countries",
+      "type": "nominal",
       "title": null
-    }
+    },
+    "tooltip": [
+      {
+        "field": "Employment by sex and age",
+        "type": "quantitative",
+        "title": "Employment by sex and age"
+      },
+      {"aggregate": "sum", "type": "ordinal", "title": "Countries"}
+    ]
   },
   "config": {}
 }
