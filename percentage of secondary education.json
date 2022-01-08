@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Percentage of secondary education enrollement",
+    "subtitle": "Year:2017, Source:World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/Data-School%20enrollement%20percentage%20in%20secondary%20school.csv"
+  },
+  "mark": {"type": "bar", "color": "#4f2897", "strokeWidth": 2, "opacity": 1},
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "y": {"field": "Country", "type": "ordinal", "sort": "-x", "title": null},
+    "x": {
+      "field": "% of Secondary enrollement in 2017",
+      "type": "quantitative",
+      "sort": {
+        "field": "% of Secondary enrollement in 2017",
+        "order": "descending"
+      },
+      "title": null,
+      "scale": {"domain": [0, 140]}
+    },
+    "tooltip": [
+      {
+        "field": "% of Secondary enrollement in 2017",
+        "type": "quantitative",
+        "title": "% of secondary enrollement"
+      },
+      {"aggregate": "sum", "type": "ordinal", "title": "Country"}
+    ]
+  },
+  "config": {}
+}
