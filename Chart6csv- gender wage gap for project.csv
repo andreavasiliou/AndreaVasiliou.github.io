@@ -1,0 +1,31 @@
+﻿Country,time,value,region,areaType
+AUSTRALIA,2018,11.71,Australia,region
+AUSTRIA,2018,14.88,Europe,region
+CANADA,2018,3.41,North America,region
+CZECK REPUBLIC,2018,15.13,Europe,region
+DENMARK,2018,4.86,Europe,region
+GERMANY,2018,15.25,Europe,region
+HUNGARY,2018,5.32,Europe,region
+IRELAND,2018,12.90,Europe,region
+JAPAN,2018,23.54,Asia,region
+KOREA,2018,34.11,Asia,region
+LUXEMBOURG,2018,31.48,Europe,region
+MEXICO,2018,11.11,North America,region
+NEW ZEALAND,2018,12.66,Oceania,region
+NEW ZEALAND,2018,6.51,Oceania,region
+NORWAY,2018,5.49,Europe,region
+POLAND,2018,4.81,Europe,region
+SLOVAK REPUBLIC,2018,13.87,Europe,region
+SWITZERLAND,2018,7.42,Europe,region
+UNITED STATES,2018,12.28,North America,region
+UNITED KINGDOM,2018,13.00,Europe,region
+CHILE,2018,12.50,South America,region
+COLOMBIA,2018,7.69,South America,region
+COSTA RICA,2018,-0.11,North America,region
+CROATIA,2018,0.00,Europe,region
+ISRAEL,2018,21.79,Asia,region
+MALTA,2018,11.69,Europe,region
+BRAZIL,2018,29.00,Soutch America,region
+INDIA,2018,26.00,Asia,region
+ARGENTINA,2018,43.00,South America,region
+CHINA,2018,21.70,Asia,region
