@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Gender wage gap",
+  "data": {
+    "url": "https://raw.githubusercontent.com/andreavasiliou/AndreaVasiliou.github.io/main/Chart6csv-%20gender%20wage%20gap%20for%20project.csv",
+    "format": {"type": "csv"}
+  },
+  "title": {
+    "text": "Gender wage gap",
+    "subtitle": "Source: OECD data",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "anchor": "start",
+    "color": "purple"
+  },
+  "height": 300,
+  "width": 350,
+  "mark": {"type": "bar", "width": 10},
+  "selection": {
+    "Region": {
+      "type": "single",
+      "fields": ["region"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Europe",
+          "Asia",
+          "Oceania",
+          "North America",
+          "Australia",
+          "South America"
+        ],
+        "name": "Continent"
+      }
+    }
+  },
+  "transform": [{"filter": {"selection": "Region"}}],
+  "encoding": {
+    "x": {
+      "field": "Country",
+      "type": "ordinal",
+      "title": null,
+      "sort": {"field": "value", "order": "descending"}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "sort": "-x",
+      "title": null
+    },
+    "color": {
+      "field": "rank",
+      "type": "nominal",
+      "legend": null,
+      "scale": {"scheme": "purples"}
+    },
+    "tooltip": [
+      {"field": "Country", "title": "Country"},
+      {
+        "field": "value",
+        "title": "Gender wage gap",
+        "type": "quantitative",
+        "format": ","
+      }
+    ]
+  },
+  "config": {}
+}
