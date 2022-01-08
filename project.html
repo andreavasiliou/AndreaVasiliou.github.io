@@ -22,14 +22,6 @@
 
    
        </head>
-<style> 
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
-body{
-    margin:0;
-    text-align:center !important; }
-
-</style>
 
 
 <div class="wrap"></head>
@@ -41,9 +33,8 @@ body{
     
     <body>
  
-    <div style="margin-top:-10px;text-align:center !important;padding:1px 16px;">
     
-        <header>
+        
  
 
             <h1>Data<span style="color:purple">Science</span></h1></span>
@@ -52,7 +43,6 @@ body{
     
        
           <div class="container">
-          <button class="button-56" role="button">Home</button>
           <button class="button-56" onclick="location.href='https://andreavasiliou.github.io/'">Portfolio</button>
           <button class="button-56" onclick="location.href='https://github.com/andreavasiliou/AndreaVasiliou.github.io'">Github</button>
           <button class="button-56" onclick="location.href='https://rapidcharts.io/datascience'">Course Site</button>
@@ -63,73 +53,70 @@ body{
 
 <body>
   
-    <h3><span style="color: rgb(0, 0, 0); font-weight: 700;">World wide Inequality and some of its causes.</span></h3></body>
+    <h3><span style="color: rgb(0, 0, 0); font-weight: 700;">World wide Inequality and some of its causes.</span></h3>
+
+</body>
     
-   <div class="main body">
+
 
     <container class="container">
     <alt=WHERE IS THE HIGHEST INEQUALITY? WHAT are its causes?width="900" height="100">
     </container>
 
 
-   <h2> <span style="color: rgb(141, 42, 255); font-weight: 700;">Where is the heighest inequality and how do we explain it?</span></h2>
+   <h2><span style="color: rgb(141, 42, 255); font-weight: 700;">Where is the heighest inequality and how do we explain it?</span></h2>
     
    <div class="box">
        <div class="d">
            <p>The aim of this project is to observe how inequality differs in the world. I will be measuring inequality by the Gini coefficient and mention some
             possible causes that affect inequality.When the Gini coefficient is 0 it represents complete equality but when it is 100 
             it represents complete inequality.</p>
-
-        <p>The map was done, by taking the data for worldwide Gini coefficient from World bank.
-            I used a json file which included the coordinates for each country in the world.
-            In the Colab notebook, I matched the countries’ names with the countries’ names 
-            in the JSON file and matched their corresponding coordinates.</p>
-       </div>
-
-<p>The colab notebook is found here <a class="textLink"
-    href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/World_map_inequality.ipynb"
-    style="color:rgb(245, 164, 43);"> here</a>.
-</p>
+  </div>
 </div>
 
 
 
        
+<h3><span style="color: rgb(20, 7, 36); font-weight: 1000;">Introduction: World Map Inequality-Gini coefficient</span></h3>
 
-       <container class="bcontainer">
-           <h3 class="bodyText"><span style="color: rgb(18, 4, 34); font-weight: 700;">An introduction: World map of Inequality-Gini coefficient</span></h3>
-       </container>
-
-       <!---For Graphs-->
-       <container class="container">
+     
 
     <!--INEQUALITY MAP - chart 1-->
-        <h3></h3>
-        <p></p>
-        <div class="chart" id="chart1">
-            <iframe src="kepler.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
-        </div>
-    </div>
+    <div class="a">
+
+   
+ <iframe src="kepler.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+</div>
+
     <div class="box">
         <div class="d">
+            <p>This interactive map was done, by taking the data for worldwide Gini coefficient from World bank.
+                I used a json file which included the coordinates for each country in the world.
+                In the Colab notebook, I matched the countries’ names with the countries’ names 
+                in the JSON file and matched their corresponding coordinates.</p>
+         
+    <p>The colab notebook is found here <a class="textLink"
+        href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/World_map_inequality.ipynb"
+        style="color:rgb(245, 164, 43);"> here</a>.
+    </p>
             <p>The highest income inequality is in Namibia, with score of 59.1.
                 The project will mainly focus on India, Brazil, Argentina, China,
                 as the top developing countries, and United Kingdom, USA, and Germany 
-                as the top developed countries.
-                Therefore, from the countries of interest, the greatest inequality is in Brazil (53.3) and USA with (41.5).
-           <br><p>Consequently, in the project I am suggesting that the key factors that affect inequality, are
-               government expenditure on education( as part of GDP),% of people attending the secondary education and population growth.</p></p>
+                as the top developed countries.Therefore, from the countries of interest, the greatest inequality for developing and developed countries is in Brazil (53.3)
+                and USA with (41.5) respectively.</p>
+           <p>Consequently, in the project I am suggesting that the key factors that affect inequality, are
+               government expenditure on education(as part of GDP),% of people attending the secondary education, gender wage gap
+               and population growth.</p>
         </div>
     </div>
 
 
-        </p>
-        <div>
-        </div>
+        
 
 <!-- Government expenditure on education-Chart2-->
     <h3><span style="color: rgb(20, 7, 36); font-weight: 1000;">Government expenditure on education</span></h3>
-    <p></p>
+
+    <div class="a">
     <div class="chart" id="chart2">
         <script>
             var myChart2 ="Government expenditure on education-area.json";
@@ -137,97 +124,132 @@ body{
            </script>
     </div>
 </div>
+
 <div class="box">
     <div class="d">
-        <p>The second graph was created using World Bank data.I downloaded all of the data and manipulated it in Excel in order to get 
+        <p>This graph was created using World Bank data.I downloaded all of the data and manipulated it in Excel in order to get 
             the years of interest (from 2013 to 2017).I calculated the average of the % of government expenditure on education for each country. 
             I observed that the highest expenditure is in Brazil (5.756%).Throughout the years, it can be observed from the graph that Brazil is always above the other countries. 
              Therefore, we can say that this factor might not have a big effect on inequality, given the fact that Brazil has one of the highest inequalities in the World.</p>
+
+        <p>I chose this as a possible factor that affects inequality since, low levels of expenditure on education and skills 
+              limits peoples' ability to access decent jobs to develop themselves and participate fully in society;</p>     
+    
+    </div>
+</div>
+
+<!--Percentage of secondary enrollement-->
+
+<h3><span style="color: rgb(20, 7, 36); font-weight: 1000;">Percentage of secondary education attainment</span></h3>
+
+<div class="a">
+    <div class="chart" id="chart7">
+        <script>
+            var myChart7 ="percentage of secondary education.json";
+            vegaEmbed('#chart7',myChart7);
+           </script>
+    </div>
+</div>
+
+<div class="box">
+  <div class="d">
+    <p>This graph demonstrates another factor affecting inequality.This is because, when people attending secondary education
+        have a higher possibility for higher wages than the rest of the people who do not attend secondary education 
+        resulting in higher inequality.</p>
+  </div>
+</div>
+
+        
+ <!--Regression between wages and educational attainment-Chart4-->
+        <h3><span style="color: rgb(20, 7, 36); font-weight: 1000;">Regression between wages and educational attainment</span</h3>
+
+            <div class="pngchart">
+                <img src="Regression wages and educational attainment.png" />
+                </div>
+
+        <div class="box">
+            <div class="d">
+                <p>This graph is a regression between wages and secondary education in general in the World. 
+                    The calculated R2= 0.02 suggests that, only 2% of the variation in the wages in the UK is explained
+                    by the % of secondary educational attainment. 
+                    This further suggests that there are other factors that can affect wages and as a result income
+                    inequality. For example, gender wage gap and population growths.
+                    For this graph, I used notebook colab, python correlation.</p>
+        
+            </div>
+        </div> 
+
+        <div class="container">
+        <p>The colab notebook is found here <a class="textLink"
+            href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Copy_of_Regression_between_wages_and_educational_attainment.ipynb"
+            style="color:rgb(245, 164, 43);"> here</a>.
         </p>
+        </div>
 
-     <!--% of people attending secondary education-Chart3-->
-     <h3><span style="color: rgb(20, 7, 36); font-weight: 1000;"> Percentage of people attending secondary education</span></h3>
-     <div class="box">
-         <div class="d">
-             <p>Graph3, is the % of the population that attend secondary education.This is another factor that affect inequality, because when people attend secondary education, 
-                it is reasonable to believe that they are going to receive higher wages than the rest of the people who do not attend secondary education, 
-                resulting in higher inequality.</p>
-         </div>
-     </div>
-<div class="chart" id="chart3">
-    <script>
-        var myChart3 ="Secondary enrollement.json";
-        vegaEmbed('#chart3, myChart3');
-</script>
-</div>
+        <!--Gender wage gap-chart5-->
+<h3><span style="color: rgb(20, 7, 36); font-weight: 1000;">Gender wage gap</span></h3>
+
+<div class="a">
+    <div class="chart" id="chart6">
+        <script>
+            var myChart6 ="Gender wage gap.json";
+            vegaEmbed('#chart6',myChart6);
+           </script>
+    </div>
 </div>
 
 <div class="box">
-    <div class="d">
-        <p>This graph was made by obtaining data from the World Bank for one specific year-2017.The biggest % is present in the United Kingdom,
-             which can be a reasonable factor as the United Kingdom only has a Gini coefficient of 33.2,which is low in comparison to the rest of the countries discussed.</p>
-    </div>
+  <div class="d">
+    <p>The Gender wage gap graph was created using OECD date and manipulated in Excel.
+       From the countries of interest, one of the greatest gender gaps is in Brazil (ranked:4th), which can be 
+       perceived as a reasonable explanation for high income inequality(53.3).</p>
+  </div>
 </div>
+        
+        <!-- Population growth in 4 developing countries-Chart5-->
+        <h3><span style="color: rgb(20, 7, 36); font-weight: 1000;">Population growth in four developing countries</span></h3>
 
+        <div class="a">
+            <div class="chart" id="chart5">
+                <script>
+                    var myChart5 ="Chart5-Population Growth in 4 developing countries.json";
+                    vegaEmbed('#chart5',myChart5);
+                   </script>
+            </div>
+        </div>
 
-    <div class="container">
-</div>
-
-<!--Regression between wages and educational attainment-Chart4-->
-<h3><span style="color: rgb(20, 7, 36); font-weight: 1000;">Regression between wages and educational attainment</span</h3>
-<div class="box">
-    <div class="d">
-        <p>Graph4, is a regression between wages and secondary education in general in the World. 
-            The calculated R2= 0.02 suggests that, this means that only 2% of the variation in the wages in the UK is explained
-            by the % of secondary educational attainment. 
-            This further suggests that there are other factors that can affect wages and as a result income
-            inequality, For example, population growth, or the Gross domestic product of the country.
-            For this graph, I used notebook colab, python correlation.</p>
-
-    </div>
-</div> 
-<div class="pngchart">
-    <img src="Regression wages and educational attainment.png" />
-    </div>
-
+        <div class="box">
+            <div class="d">
+                <p> I used population growths for Argentina, India, Brazil and China through Fred. 
+                    I chose each data separately by requesting an API from FRED, then a I made a loop in python collab to put it in 1 csv.
+                    Then I adapted layering technique in Vega lite to put all the data in 1 graph.
+                    As suggested by the graph, the population growths for almost all countries are 
+                    increasing at a decreasing rate. We can obviously observe that India is always above all countries.
+                    Therefore, is the higher population growth a good factor explaining the income INEQUALITY?
+                    Using the World map, India has in fact the lowest income inequality compared to the rest of the countries in this graph.
+                    Therefore, we can conclude that it is not the best factor which explains income inequality.</p>
+            </div>
+        </div>
     
-<div class="container">
-<p>The colab notebook is found here <a class="textLink"
-    href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Copy_of_Regression_between_wages_and_educational_attainment.ipynb"
-    style="color:rgb(245, 164, 43);"> here</a>.
-</p>
-</div>
+       
+        
+        
+        <div class="a">
+        <p>The colab notebook is found here <a class="textLink"
+            href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Loops_and_API.ipynb"
+            style="color:rgb(245, 164, 43);"> here</a>.
+        </p></div>
 
-<!-- Population growth in 4 developing countries-Chart5-->
-<h3><span style="color: rgb(20, 7, 36); font-weight: 1000;">Population growth in 4 developing countries</span></h3>
+
+<h3><span style="color: rgb(20, 7, 36); font-weight: 1000;">Conclusions and limitations</span></h3>
 <div class="box">
     <div class="d">
-        <p>Graph5: Another factor that explains inequality is the population growth.
-            I used population growths for Argentina, India, Brazil and China through Fred. 
-            I chose each data separately by requesting an API from FRED, then a I made a loop in python collab to put it in 1 csv.
-            Then I adapted layering technique in Vega lite to put all the data in 1 graph.
-            <br> As suggested by the graph, the population growths for almost all countries are 
-             increasing at a decreasing rate. We can obviously observe that India is always above all countries.
-             Therefore, is the higher population growth a good factor explaining the income INEQUALITY?
-             Using the World map, India has in fact the lowest income inequality compared to the rest of the countries in this graph.
-             Therefore, we can conclude that it is not the best factor which explains income inequality.</p>
+      <p>Concluding on the above, we can certainty agree that there are numerous forms of inequality as well as numerous factors affecting it. A possible limitation is that there are factors that are not included in the project and must be observed with cautious, 
+          in order to have a valid conclusion. There were not any major concerns with data scrapping, and handling.
+           However, a challenge that I faced, was when I created the world map, I had to manually change the names in order to match the countries’ names and coordinates with the other JSON file, using Python in Google Colab. 
+           Moreover, I had to drop some countries that did not have a Gini coefficient, for a better map.</p>
     </div>
-</div>
-    
-<div class="chart" id="chart5">
-    <script>
-        var myChart5 ="Chart5-Population Growth in 4 developing countries.json";
-        vegaEmbed('#chart5',myChart5);
-       </script>
-</div>
-</div>
-
-</div class="container">
-<p>The colab notebook is found here <a class="textLink"
-    href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Loops_and_API.ipynb"
-    style="color:rgb(245, 164, 43);"> here</a>.
-</p>
-
+  </div>
 
 
 
