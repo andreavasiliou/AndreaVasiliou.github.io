@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Percentage of secondary education enrollement",
+    "text": "Percentage of the population attending secondary education enrollement",
     "subtitle": "Year:2017, Source:World Bank",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
