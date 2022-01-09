@@ -93,7 +93,7 @@
                 In the Colab notebook, I matched the countries’ names with the countries’ names 
                 in the JSON file and matched their corresponding coordinates.</p>
          
-    <p>The colab notebook is found here <a class="textLink"
+    <p>The colab notebook is <a class="textLink"
         href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/World_map_inequality.ipynb"
         style="color:rgb(245, 164, 43);"> here</a>.
     </p>
@@ -102,7 +102,7 @@
                 as the top developing countries, and United Kingdom, USA, and Germany 
                 as the top developed countries.Therefore, from the countries of interest, the greatest inequality for developing and developed countries is in Brazil (53.3)
                 and USA(41.5), respectively.</p>
-           <p>Consequently, in the project I am suggesting that the key factors that affect inequality, are
+           <p>In the project I am suggesting that the key factors that affect inequality, are
                government expenditure on education(as part of GDP),% of people attending the secondary education, gender wage gap
                and population growth.</p>
         </div>
@@ -126,8 +126,8 @@
 <div class="box">
     <div class="d">
         <p>This graph was created using World Bank data.I downloaded all of the data and manipulated it in Excel in order to get 
-            the years of interest (from 2013 to 2017).I calculated the average of the % of government expenditure on education for each country. 
-            I observed that the highest expenditure is in Brazil (5.756%).Throughout the years, it can be observed from the graph that, Brazil is always above the other countries. 
+            the years of interest (from 2013-2017).I calculated the average of the % of government expenditure on education for each country. 
+            I observed that the highest expenditure is in Brazil (5.756%).It can be observed from the graph that, Brazil is always above the other countries. 
              Therefore, we can say that this factor might not have a big effect on inequality, given the fact that Brazil has one of the highest inequalities in the World.</p>
 
         <p>I chose this as a possible factor that affects inequality since, low levels of expenditure on education and skills 
@@ -157,7 +157,7 @@
         resulting in higher inequality.</p>
       <p>This interactive bar chart was made using World Bank data. The data has been manipulated in Excel, in order to include only the countries
       of interest.This factor is connected to the next graph, as I wanted to observe whether wages and secondary education are correlated. This 
-          was done because it is reasonable to believe that higher secondary education, leads to higher wages for those that attend this type 
+          was done because it is reasonable to believe that higher secondary education, leads to higher wages for people attending this type 
           of education, leading to higher inequality.</p>
       
   </div>
@@ -173,8 +173,7 @@
 
         <div class="box">
             <div class="d">
-                <p>This graph is a regression between wages and secondary education in general in the World. 
-                    The calculated R2= 0.02 suggests that, only 2% of the variation in the wages in the UK is explained
+                <p>The calculated R2= 0.02 suggests that, only 2% of the variation in the wages in the UK is explained
                     by the % of secondary educational attainment. 
                     This further suggests that there are other factors that can affect wages and as a result affect income
                     inequality. For example, gender wage gap and population growths.
@@ -184,7 +183,7 @@
         </div> 
 
         <div class="container">
-        <p>The colab notebook is found here <a class="textLink"
+        <p>The colab notebook is <a class="textLink"
             href="https://github.com/andreavasiliou/AndreaVasiliou.github.io/blob/main/Copy_of_Regression_between_wages_and_educational_attainment.ipynb"
             style="color:rgb(245, 164, 43);"> here</a>.
         </p>
@@ -206,7 +205,7 @@
   <div class="d">
     <p>The Gender wage gap graph was created using OECD data and manipulated in Excel.
        From the countries of interest, one of the greatest gender gaps is in Brazil (ranked:4th), which can be 
-       perceived as a reasonable explanation for its high income inequality(53.3) observed in the World map above.</p>
+       perceived as a reasonable explanation for its high income inequality(53.3), observed in the World map.</p>
   </div>
 </div>
         
@@ -224,14 +223,14 @@
 
         <div class="box">
             <div class="d">
-                <p> I used population growths for Argentina, India, Brazil and China through Fred. 
+                <p> I used population growths for Argentina, India, Brazil and China. 
                     I chose each data separately by requesting an API from FRED, then a I made a loop in python collab to put it in 1 csv.
-                    Then I adapted layering technique in Vega lite to put all the data in 1 graph.
+                    Then I adapted layering technique in Vega-lite to put the data in 1 graph.
                     As suggested by the graph, the population growths for almost all countries are 
-                    increasing at a decreasing rate. We can obviously observe that India is always above all countries.
-                    Therefore, is the higher population growth a good factor explaining the income INEQUALITY?
+                    increasing at a decreasing rate. We can observe that India is always above all countries.
+                    Therefore, is the higher population growth a good factor explaining income INEQUALITY?
                     Using the World map, India has in fact the lowest income inequality compared to the rest of the countries in this graph.
-                    Therefore, we can conclude that it is not the best factor which explains income inequality.</p>
+                    Therefore, we can conclude that it is not the best factor explaining income inequality.</p>
             </div>
         </div>
     
@@ -248,7 +247,7 @@
 <h3><span style="color: rgb(20, 7, 36); font-weight: 1000;">Conclusions and limitations</span></h3>
 <div class="box">
     <div class="d">
-      <p>Concluding on the above, we can certainty agree that there are numerous forms of inequality as well as numerous factors affecting it. A possible limitation is that there are factors that are not included in the project and must be observed with cautious, 
+      <p>Concluding, we can certainty agree that there are numerous forms of inequality as well as numerous factors affecting it. A possible limitation is that there are factors that are not included in the project and must be observed with cautious, 
           in order to have a valid conclusion. There were not any major concerns with data scrapping, and handling.
            However, a challenge that I faced, was when I created the world map, I had to manually change the names in order to match the countries’ names and coordinates with the other JSON file, using Python in Google Colab. 
            Moreover, I had to drop some countries that did not have a Gini coefficient, for a better map.</p>
